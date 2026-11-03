@@ -3,13 +3,18 @@
 Research code, aggregate results and reproducible analysis for **Energy-Informed
 Recovery of Power Telemetry After Communication Gaps**.
 
-**Research status.** The focused experiment
-`conference-20261101T165101Z-1789282` is operationally complete. This repository
-contains code, aggregate evidence and analysis scripts. The manuscript and its sources are distributed separately. Further
-validation is work in progress. The full experiment remains a separate extension;
-physical measurement semantics, selection-budget sensitivity and external
-validity remain unresolved. Conference acceptance and an archival DOI are not
-implied by the availability of this software.
+**Manuscript status: under review at IEEE ICIT 2027.**
+
+This repository provides the experiment implementation, aggregate results and
+versioned analyses for the completed focused study
+`conference-20261101T165101Z-1789282`. The manuscript is maintained separately.
+The code supports both the executed **focused** design and a configurable **full**
+extension. Further validation and extensions are tracked in the
+[development roadmap](docs/development_status.md).
+
+**Data availability.** The data supporting this study are available from the
+authors upon reasonable request. Aggregate results are included here. See
+[access instructions and reproduction scope](DATA_AVAILABILITY.md).
 
 The study asks whether admissible energy-register increments at the boundaries of
 a communication gap can help recover its hidden power trajectory and support a
@@ -27,6 +32,7 @@ forecast utility are evaluated as distinct outcomes.
 | Inspect the actual run | [Evidence directory](results/conference-20261101T165101Z-1789282/) and [provenance guide](docs/icit2027_reproduction.md) |
 | Understand what is and is not publicly reproducible | [Data availability](DATA_AVAILABILITY.md) |
 | Run synthetic software checks | [Reproduction guide](docs/reproduction.md) |
+| Inspect reference hardware and resource settings | [Server hardware](docs/reference_hardware.md) |
 | Run a new experiment on the V100 | [Server guide](SERVER_GUIDE.md) and [experiment profiles](docs/experiment_profiles.md) |
 | Read the compact protocol and runtime supplement | [ICIT supplement](docs/icit2027_supplement.md) |
 | Review remaining work | [Development status](docs/development_status.md) and [release checklist](docs/release_checklist.md) |
@@ -141,7 +147,8 @@ Outputs go to `analysis/public_outputs/`. The command does not reconstruct
 individual episode pairing or rerun bootstrap resampling. The published bootstrap
 arrays contain aggregate contrast estimates only. Full loss-level recomputation
 requires restricted artifacts and is documented in the [analysis guide](analysis/README.md).
-The article, LaTeX sources, editorial prompts and individual records are excluded.
+The article and individual records are maintained separately from this public
+code-and-aggregate release.
 See the [reproduction levels](docs/icit2027_reproduction.md) and [data terms](DATA_AVAILABILITY.md).
 
 ## Run a new focused experiment
@@ -156,11 +163,20 @@ bash scripts/server.sh run --preset focused --threads 32 --budget-hours 24
 ```
 
 The 24-hour value is a configured compute ceiling, not a completion guarantee.
-The reference server recorded a Tesla V100-PCIE 16 GB, Python 3.12.16 and PyTorch
-2.9.1+cu126. Check actual `sm_70` kernel support before training. Preserve the CUDA
-build when installing the remaining dependencies. The [observed environment
-snapshot](environments/icit2027-runtime-observed.json) contains the recorded
-package subset; it is not a complete environment lock.
+The reference machine has **386 GB RAM**, **two Intel Xeon Gold 6130 processors
+at 2.10 GHz** (32 physical cores, 64 logical processors) and a **Tesla V100-PCIE
+16 GB**. The recorded runtime uses Python 3.12.16 and PyTorch 2.9.1+cu126.
+
+Host capacity, process affinity and resource usage are distinct. The experiment
+requests 32 main-process threads. Correction workers initially used 8 workers
+with 16 pending tasks; later sessions used 16 workers with 32 pending tasks.
+Each correction worker uses one BLAS thread. The
+[hardware guide](docs/reference_hardware.md) documents CPU topology, NUMA,
+container visibility, batch sizes and provenance.
+
+Check actual `sm_70` kernel support before training and preserve the CUDA build
+when installing dependencies. The [observed environment snapshot](environments/icit2027-runtime-observed.json)
+contains the recorded package subset; it is not a complete environment lock.
 
 For full, explicitly use `--preset full` and a separately chosen budget. To resume
 an existing compatible run, retain its complete original run directory and use
@@ -168,16 +184,41 @@ an existing compatible run, retain its complete original run directory and use
 are documented in [reporting performance](docs/reporting_performance.md); they
 are not a general identity bypass.
 
-## Licensing and release status
+## Repository structure
 
-Original code is covered by [MIT](LICENSE). Private telemetry, derived experiment
-evidence and third-party artifacts do not automatically inherit
-that license. No raw telemetry, model weights, environments, credentials or full
-SQLite databases are bundled. Read [data availability](DATA_AVAILABILITY.md),
-[third-party notices](THIRD_PARTY_NOTICES.md) and the [release checklist](docs/release_checklist.md).
+| Directory or file | Purpose |
+| --- | --- |
+| `src/energygap/` | Data contracts, availability rules, reconstruction, energy correction, forecasting, statistics and execution state |
+| `configs/` | Focused/full configurations, dataset contracts and audited continuation registries |
+| `scripts/` | Server setup, execution, monitoring, packaging and public aggregate reproduction |
+| `analysis/scripts/` | Original report checks, common-target forecasts, energy-control replay and public summaries |
+| `analysis/outputs/` | Reconstruction aggregates, control summaries, diagnostics and figures |
+| `analysis/forecast_v2/` | Versioned common-observed-target forecast analysis |
+| `analysis/energy_controls/` | Same-information scalar controls and paired exploratory comparisons |
+| `results/` | Six original aggregate report exports and a clearly identified public protocol extract |
+| `tests/` | Synthetic unit, integration, recovery and optional native-model checks |
+| `docs/` | Methods, information availability, statistical plan, execution guides and research roadmap |
+| `environments/` | Source hashes, dependency records, observed runtime and reference hardware |
+| `ARTIFACT_MANIFEST.json` | SHA-256 inventory for the public release |
+| `CHANGELOG.md` | Documentation and packaging changes, separate from scientific analysis versions |
 
-The repository is maintained at
-[`chgferreira/energygapbench-icit2027`](https://github.com/chgferreira/energygapbench-icit2027).
-The citation metadata preserves the manuscript author order and identifies its
-publication status. Tagged releases and archival identifiers, when created, must
-be recorded separately from the experiment and analysis versions.
+## Citation, data access and licensing
+
+The associated manuscript, **Energy-Informed Recovery of Power Telemetry After
+Communication Gaps**, is **under review at IEEE ICIT 2027**. Author order and
+citation metadata are provided in [`CITATION.cff`](CITATION.cff). Cite the software
+version or commit used in a reproduction, and distinguish the original experiment
+from its versioned follow-up analyses.
+
+Study data are **available upon reasonable request** to the authors through the
+[repository maintainer](https://github.com/chgferreira). Requests should identify
+the required data or artifacts and the intended research use. Access to individual
+telemetry and derived records is subject to the applicable privacy and data-holder
+conditions; public aggregate results can be used immediately for the documented
+reproduction workflow. See [data availability](DATA_AVAILABILITY.md).
+
+Original code is covered by [MIT](LICENSE). Data and third-party assets retain
+separate terms. Read [third-party notices](THIRD_PARTY_NOTICES.md) for model and
+upstream-source licensing. The [release checklist](docs/release_checklist.md)
+and [development roadmap](docs/development_status.md) distinguish completed
+software checks from pending scientific validation.

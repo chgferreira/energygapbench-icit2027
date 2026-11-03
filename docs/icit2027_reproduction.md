@@ -43,7 +43,10 @@ extension and cannot silently replace the focused experiment.
 The observed reference server used Python 3.12.16, PyTorch 2.9.1+cu126, CUDA runtime
 12.6 and Tesla V100-PCIE 16 GB with tested sm_70 support. The
 [observed package subset](../environments/icit2027-runtime-observed.json) is not a
-complete environment lock. Check kernels on the target hardware. Training uses
+complete environment lock. The [reference host](reference_hardware.md) has 386 GB
+RAM and two Xeon Gold 6130 CPUs at 2.10 GHz, with 32 physical cores and
+64 logical processors. Check kernels and effective resources on the target
+hardware. Training uses
 batch 32; episode inference requests 256. The frozen HPO ceiling is 20 epochs,
 patience five, two fixed candidates. Details are in the
 [protocol supplement](icit2027_supplement.md).
@@ -66,5 +69,6 @@ The public package cannot resume the old run. Recovery requires the complete
 original server directory, ledger and checkpoints. Never copy this aggregate
 results directory into `runs/` and treat it as a resumable experiment.
 
-The article and LaTeX project are intentionally outside the repository. A GitHub
-URL does not imply conference acceptance, publication or an archival DOI.
+The manuscript is under review at IEEE ICIT 2027 and is maintained separately.
+Study data and individual derived artifacts are available from the authors upon
+reasonable request through the process in [data availability](../DATA_AVAILABILITY.md).

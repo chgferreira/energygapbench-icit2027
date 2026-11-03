@@ -1,18 +1,20 @@
 # Documentation index
 
-**Status: work in progress.** This documentation describes the implemented designs
-and remaining research work. A configured or successfully executed experiment is
-not automatically an accepted scientific result.
+The associated manuscript is **under review at IEEE ICIT 2027**. This documentation
+covers the completed focused study, public aggregate reproduction, execution
+with authorized data and planned extensions. Study data are available from the
+authors upon reasonable request through the [data access process](../DATA_AVAILABILITY.md).
 
 ## Start here
 
 | Purpose | Document |
 | --- | --- |
 | Project overview and quick start | [Repository README](../README.md) |
-| Reproduce the ICIT paper from supplied results | [ICIT artifact reproduction](icit2027_reproduction.md) and [analysis](../analysis/README.md) |
+| Reproduce ICIT aggregate tables, figures and interval summaries | [ICIT artifact reproduction](icit2027_reproduction.md) and [analysis](../analysis/README.md) |
 | Included derived data and sharing boundaries | [Data availability](../DATA_AVAILABILITY.md) |
 | Original forecast NA values and follow-up analysis | [Version-2 contract](../analysis/forecast_v2/README.md) |
 | Choose focused/full; understand rationale and differences | [Experiment profiles](experiment_profiles.md) |
+| Understand the reference CPU, RAM, GPU and thread settings | [Reference hardware](reference_hardware.md) |
 | Run, validate, monitor, stop, and resume on the server | [Server guide](../SERVER_GUIDE.md) |
 | Current evidence, pending tests, and acceptance criteria | [Development status and TODO](development_status.md) |
 | Scope and unresolved assumptions | [Limitations](limitations.md) |

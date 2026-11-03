@@ -1,17 +1,24 @@
 # Development status and remaining work
 
-**Work in progress, reviewed 3 November 2026.** The supplied focused run is
-operationally completed. This publication candidate includes its compact evidence,
-result-derived analysis and manuscript. The full design, physical confirmation,
-selection sensitivities and external validation remain future work.
+**Study status, updated 3 November 2026.** The manuscript is **under review at
+IEEE ICIT 2027**. The focused execution is operationally complete, with versioned
+reconstruction, forecast and energy-control analyses. The public repository
+contains code, documentation, aggregate results and analysis scripts. The
+manuscript and individual records are maintained separately.
+
+Further scientific validation is work in progress. The full design, physical
+confirmation, selection sensitivities and external validation remain future work.
+Data are available upon reasonable request to the corresponding author or
+[repository maintainer](https://github.com/chgferreira), subject to applicable
+confidentiality and data-holder requirements. See [data availability](../DATA_AVAILABILITY.md).
 
 ## Evidence and its limits
 
 | Evidence | What it supports | What it does not establish |
 | --- | --- | --- |
-| Frozen run protocol and original runtime history | Actual scope, environment, planned budgets and continuation provenance | External preregistration, blindness to previously studied data or complete raw-data reproducibility |
-| Supplied summary and report completion records | Operational completion, 33 recorded fits, no fit failures and no unresolved jobs | Correctness or adequate support of every scientific endpoint |
-| Compact losses, aggregates and contrasts | Reproduction and inspection of supported result-derived analyses | Complete prediction/solver audit, all forecast-horizon reanalysis or raw trajectory recovery |
+| Original frozen protocol and runtime history, retained separately; public protocol extract | Actual scope, environment, planned budgets and continuation provenance | External preregistration, blindness to previously studied data or complete raw-data reproducibility |
+| Original summary/completion records and published aggregate audits | Operational completion, 33 recorded fits, no fit failures and no unresolved jobs | Correctness or adequate support of every scientific endpoint |
+| Published aggregates and contrasts; individual losses retained separately | Public figure/table reproduction and authorized loss-level reanalysis | Complete prediction/solver audit, all forecast-horizon reanalysis or raw trajectory recovery |
 | Analysis input checksums and regenerated tables/figures | Traceability from archived outputs to manuscript claims | Independent regeneration of those outputs from the original telemetry |
 | Synthetic, leakage, recovery and CPU regression tests | Behavior on tested fixtures and environments | V100 numerical equivalence for every model or universal model performance |
 | Recorded V100 runtime | Device/package settings used by this run | Hardware-independent determinism, saturation or a guaranteed 24-hour completion |
@@ -24,8 +31,13 @@ An unavailable planned endpoint must not be replaced by an unlabelled post hoc o
 ## Priority 1: close the focused-study audit
 
 - [x] Inspect the supplied primary downstream endpoint and preserve its NA values.
-  The analysis reproduces its missing-outcome propagation and labels the additional
-  common available-target supplement as post hoc and conditional.
+  The original complete-outcome rule and its unavailable values remain archived.
+- [x] Complete the separately versioned common-target forecast analysis with
+  paired calendar-day intervals and explicit exploratory, conditional interpretation.
+- [x] Add same-information scalar energy controls and paired exploratory contrasts,
+  retaining unequal search budgets and the limits of component attribution.
+- [x] Reconstruct the I1 training-calibration gate and distinguish that code-level
+  mechanism from absent original per-query solver logs and meter documentation.
 - [ ] Complete the target-missingness audit from full records and assess sensitivity
   before making stronger downstream claims or changing the planned estimand.
 - [ ] Obtain the missing full forecast/episode records, selection diagnostics and
@@ -35,8 +47,8 @@ An unavailable planned endpoint must not be replaced by an unlabelled post hoc o
   A 100-epoch cap and zero fit failures do not demonstrate convergence.
 - [ ] Retain full mask/panel manifests and the original ledger/checkpoints on the
   server, then reconcile planned versus realized incidence and exclusions.
-- [ ] Have all authors review the numerical interpretation, methodological changes,
-  six-page draft, references and unresolved limitations before submission.
+- [ ] Reconcile any changes arising during peer review with the versioned analysis,
+  numerical interpretation, references and documented limitations.
 
 ## Priority 2: selection and robustness sensitivities
 
@@ -65,12 +77,13 @@ prespecified confirmatory checks.
 - [ ] Evaluate a separately frozen external installation or dataset with appropriate
   independent energy information. Three known case studies do not establish
   population-wide performance or real outage reconstruction accuracy.
-- [ ] Confirm data and derived-output sharing rights, disclosure scope, citation
-  metadata and the public access mechanism. The code license does not license
-  telemetry, manuscript content or third-party weights.
-- [ ] Create the authorized public repository, immutable release and archival record
-  only after the chosen public artifact is reviewed. Repository publication, archival deposit and DOI assignment are distinct
-  actions and must be recorded separately.
+- [x] Publish code, documentation and aggregate results with an explicit access
+  policy. The manuscript and individual records remain outside the public repository.
+- [ ] Evaluate individual data requests under the applicable confidentiality and
+  data-holder requirements. The code license does not license telemetry,
+  manuscript content or third-party weights.
+- [ ] Prepare an immutable tagged release and an archival deposit when appropriate.
+  Repository publication, archival deposit and DOI assignment are distinct actions.
 
 ## Priority 4: expanded full design
 

@@ -1,17 +1,24 @@
-# Release and manuscript checklist
+# Release maintenance and scientific validation checklist
 
-**Work in progress.** A source package can be prepared while scientific experiments
-remain unfinished, provided that status and scope are explicit. An unchecked item
-is pending work, not an implied result. Use [development TODO](development_status.md)
-for detailed experiment/test acceptance criteria.
+The manuscript is **under review at IEEE ICIT 2027**. The focused execution and
+its versioned analyses are complete within their documented scope. Further
+scientific validation remains work in progress. An unchecked item is pending
+work, not an implied result. See [development status](development_status.md) for
+detailed acceptance criteria.
 
 ## This repository
 
-The compact focused run is operationally complete, with result-derived analysis
-published as aggregates only. The manuscript is distributed separately. Original primary forecast values remain unavailable; forecast version 2 provides explicitly exploratory common-target estimates and intervals.
-The expanded full experiment and stronger physical/generalization claims remain
-future work. This checklist governs public release, not whether files can be
-prepared locally.
+The public repository contains code, documentation and aggregate results. The
+manuscript and individual records are maintained separately. Original primary
+forecast values remain unavailable under the frozen complete-outcome rule;
+forecast version 2 provides explicitly exploratory common-target estimates and
+intervals. The expanded full experiment and stronger physical/generalization
+claims remain future work.
+
+Data are available upon reasonable request to the corresponding author or
+[repository maintainer](https://github.com/chgferreira), subject to applicable
+confidentiality and data-holder requirements. This checklist applies to subsequent
+software releases and scientific revisions.
 
 ## Software and documentation
 
@@ -39,10 +46,15 @@ prepared locally.
 
 ## Permissions and publication
 
-- [ ] Confirm authorship/ownership and complete citation/deposit metadata.
+- [x] Record the current author order and the manuscript's under-review status in
+  citation metadata; maintain the manuscript outside the public repository.
 - [ ] Review code/checkpoint/data terms, including TS-ICL noncommercial restrictions;
   do not redistribute unresolved R24 source or unlicensed artifacts.
-- [ ] Obtain permission/access terms and disclosure review before sharing residential/
-  industrial records, processed series, truth, predictions, or identifying metadata.
-- [ ] Publish a repository/deposit/tag/DOI only through an explicitly authorized action.
-  Local package creation does not constitute public release or license private data.
+- [x] Publish the authorized code-and-aggregate repository and document data access
+  upon reasonable request.
+- [ ] Apply the appropriate access terms and disclosure review to requests for
+  residential/industrial records, processed series, truth, predictions or
+  identifying metadata.
+- [ ] Record future tags, archival deposits and DOI assignments separately from
+  the experiment and analysis versions. An under-review manuscript is not an
+  accepted or published proceedings paper.

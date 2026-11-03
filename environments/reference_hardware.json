@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "reported_on": "2026-11-03",
+  "cpu": {
+    "architecture": "x86_64",
+    "byte_order": "little_endian",
+    "model": "Intel(R) Xeon(R) Gold 6130 CPU @ 2.10GHz",
+    "sockets": 2,
+    "cores_per_socket": 16,
+    "threads_per_core": 2,
+    "physical_cores": 32,
+    "logical_processors": 64,
+    "nominal_frequency_ghz": 2.1,
+    "numa_nodes": 2,
+    "numa_topology": "node 0: even logical CPU IDs 0..62; node 1: odd IDs 1..63"
+  },
+  "system_memory": {
+    "reported_capacity": 386,
+    "unit": "GB",
+    "peak_usage_measured": false
+  },
+  "gpu": {
+    "model": "NVIDIA Tesla V100-PCIE",
+    "memory_gb": 16,
+    "compute_capability": "7.0"
+  },
+  "provenance": {
+    "cpu": "Author-supplied lscpu output",
+    "system_memory": "Author-reported capacity; no conversion to GiB inferred",
+    "gpu": "Frozen experiment runtime metadata"
+  },
+  "interpretation": "Host inventory is distinct from container quotas, process affinity, free memory and measured peak usage. No original protocol or result is modified."
+}

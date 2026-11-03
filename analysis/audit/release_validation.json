@@ -8,7 +8,15 @@
   "original_public_aggregate_exports_byte_verified": 6,
   "original_engine_python_files_byte_verified": 81,
   "public_scope": "code_documentation_aggregate_results_only",
-  "manuscript_and_editorial_prompts_in_public_repository": false,
   "private_records_in_public_repository": false,
-  "scientific_qualification": "Exploratory conditional inference; further physical and external validation pending."
+  "scientific_qualification": "Exploratory conditional inference; further physical and external validation pending.",
+  "manuscript_in_public_repository": false,
+  "minimal_environment_validation": {
+    "python": "3.12.14",
+    "dependency_installation": "clean uv pip sync from requirements.lock.txt",
+    "targeted_tests_passed": 23,
+    "targeted_tests_failed": 0,
+    "scope": "parallel report execution and versioned analysis tests",
+    "threadpoolctl": "3.7.0"
+  }
 }

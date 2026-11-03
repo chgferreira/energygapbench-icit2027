@@ -1,8 +1,15 @@
 # Dataset card and access status
 
-**Work in progress.** H1/H2/I1 are private, previously studied installation records.
-Both current profiles use the same original files and provenance rules. This card
-states available evidence and unresolved assumptions; it is not a data-release license.
+H1/H2/I1 are previously studied residential and industrial installation records
+used in the focused study **under review at IEEE ICIT 2027**. The public repository
+contains aggregate results and reproducible code. Original data and restricted
+derived records are **available upon reasonable request** to the corresponding
+author or [repository maintainer](https://github.com/chgferreira), subject to
+applicable confidentiality and data-holder requirements.
+
+Both experiment profiles use the same original files and provenance rules. The
+focused execution is complete; the expanded full design is a future extension.
+This card records the available evidence and remaining measurement assumptions.
 
 ## Sources and installation roles
 
@@ -10,8 +17,9 @@ A complete experiment expects `raw_data/H1.csv`, `raw_data/H2.csv`, and
 `raw_data/I1.csv`. Those private raw files are not bundled in this repository.
 Dataset YAMLs record explicit mapping, SHA-256, UTF-8 BOM, semicolon separators,
 comma decimals, and dot thousands separators. Ingestion supports discovery/mapping
-without changing original bytes. Local audit counts, periods, coverage, and split
-diagnostics are private artifacts, not copied into the public synthetic example.
+without changing original bytes. Aggregate counts and coverage are documented in
+the published analysis outputs. Individual timestamps, observations, masks and
+membership remain separate from the public synthetic example and aggregate exports.
 
 H1/H2 are residential sites with generation and I1 is industrial, according to the
 supplied study context. They cover separate periods. No simultaneous microgrid,
@@ -47,17 +55,24 @@ independent episode counts or physical-identifiability evidence.
 
 ## Permissions, disclosure, and reproduction
 
-Data are user-supplied; public redistribution permission and a data license have
-not been granted. Collection/consent records, anonymization review, and an authorized
-access mechanism remain pending. Raw/processed real series, truth, identifying
-predictions/masks/dates, and private audits stay outside ordinary source packages.
-This local ICIT publication candidate includes a separate compact derived-result
-bundle with timestamps and execution metadata. Its intended public sharing scope
-and permissions still require review under [Data availability](../DATA_AVAILABILITY.md).
-MIT code terms do not license telemetry. Full public raw-data reproduction on these
-three sites is therefore not established.
+The public release includes code, aggregate results, aggregate bootstrap contrast
+estimates and figures. Original telemetry, processed individual series, evaluation
+truth, per-episode losses, membership, dated masks, predictions and the complete
+execution ledger are maintained separately. Case labels are pseudonymous study
+identifiers and do not by themselves anonymize detailed records.
+
+For a data request, describe the intended research use and the required artifacts
+to the corresponding author or [maintainer](https://github.com/chgferreira).
+Access is considered under the relevant confidentiality and data-holder
+requirements. No unrestricted public download or independent data license is
+implied. The MIT software license covers code and does not license telemetry.
+See [data availability](../DATA_AVAILABILITY.md) for the release scope and access policy.
+
+The public aggregate workflow rebuilds figures and tables and checks intervals
+from aggregate bootstrap estimates. Full data ingestion, training, predictions
+and episode-level resampling require the separately obtained authorized inputs.
 
 Synthetic fixtures support open implementation checks. The [optional UCI adapter](external_validation.md)
 has separate terms, activation/DST rules, and no independent energy counters; it
 is not already an executed external benchmark. See [development TODO](development_status.md)
-for physical metadata, access, and external-validation work required before release.
+for further physical-metadata and external-validation work.

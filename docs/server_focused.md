@@ -31,9 +31,11 @@ bootstrap with 7-day blocks and 2/14-day sensitivities are retained. Physical
 hypotheses do not become instrument facts. The generic `samples: 100` field remains
 for custom probabilistic configurations; no joint-sample method is selected here.
 
-This repository includes the operationally completed focused run
-`conference-20261101T165101Z-1789282`. Its protocol lock, rather than this prose,
-defines the executed settings. See [ICIT reproduction](icit2027_reproduction.md)
+This repository includes aggregate results from the operationally completed
+focused run `conference-20261101T165101Z-1789282`. Its original protocol lock
+defines the executed settings; the public repository contains an identified
+extract. Individual records and the full lock are available upon reasonable
+request under the study access conditions. See [ICIT reproduction](icit2027_reproduction.md)
 for results, interpretation and unavailable inputs.
 
 ## Execute and inspect
@@ -65,5 +67,6 @@ ranking claim is supported by this scope.
 
 Use the [profile comparison](experiment_profiles.md) for exact omissions and
 rationale, and the [TODO roadmap](development_status.md) for required evidence.
-Before manuscript submission, align the comparator table, HPO/epoch-selection
-sections, limitations, and reported coverage with this design.
+The manuscript under review at IEEE ICIT 2027 follows this focused design.
+Subsequent revisions should preserve agreement among the comparator table,
+selection budgets, reported coverage and versioned analyses.

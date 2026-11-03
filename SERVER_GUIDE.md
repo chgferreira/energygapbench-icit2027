@@ -8,8 +8,10 @@ The scientific designs and tradeoffs are defined in
 ## Requirements and package layout
 
 Use Linux, the existing `cuda_env`, one logical device `cuda:0`, and local POSIX
-storage with sufficient free space. The target is a V100 16 GB; the default
-main-process thread request is 32. Worker counts are checked against the actual
+storage with sufficient free space. The reference host has two Intel Xeon Gold 6130 CPUs at 2.10 GHz,
+32 physical cores / 64 logical processors, 386 GB RAM and a V100 16 GB.
+The default main-process thread request is 32. See
+[reference hardware](docs/reference_hardware.md) for topology and resource provenance. Worker counts are checked against the actual
 CPU affinity rather than an assumed host-core inventory. Python 3.12/3.13 and an
 installed CUDA PyTorch `>=2.5.1,<2.10` that actually supports this GPU are required.
 The environment name and `nvidia-smi` alone do not validate CUDA kernels.
@@ -223,4 +225,5 @@ all-catalogue reproduction, or manuscript completion.
 
 The source ZIP and reporting commands do not publish private results or update the
 manuscript. Follow the [TODO roadmap](docs/development_status.md) and
-[release checklist](docs/release_checklist.md) before submission or public release.
+[release checklist](docs/release_checklist.md) for subsequent manuscript revisions
+and software releases. The associated manuscript is under review at IEEE ICIT 2027.

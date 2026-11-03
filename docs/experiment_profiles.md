@@ -157,5 +157,6 @@ paired reconstruction and forecasting endpoints. Report negative findings and
 site/duration heterogeneity. Focused results do not establish universal model
 rankings, broad architecture transfer, or probabilistic calibration. Completing
 full also does not establish reproduction of every catalogue entry or resolve
-physical metrology. Update the manuscript's comparator table and training/selection
-sections to the executed design before submission.
+physical metrology. The manuscript under review at IEEE ICIT 2027 uses the focused design. Keep
+its comparator table and training/selection descriptions aligned with the
+executed protocol and any separately versioned follow-up analyses.

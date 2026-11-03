@@ -1,5 +1,18 @@
 # Data availability and public release scope
 
+## Data access
+
+**The data supporting this study are available from the authors upon reasonable
+request.** Contact the corresponding author through the
+[repository maintainer](https://github.com/chgferreira) to discuss access. Specify
+the sites or artifacts required and the intended research purpose. Raw telemetry,
+individual derived results and additional execution artifacts are shared subject
+to applicable privacy and data-holder conditions.
+
+The associated manuscript is **under review at IEEE ICIT 2027**. The repository
+provides public code and aggregate results for examination and reproduction
+while the manuscript is maintained separately.
+
 ## Public contents
 
 This repository contains original software, configurations, synthetic tests,
@@ -14,15 +27,13 @@ Analysis summaries are grouped by site, fold, duration, method or policy.
 Bootstrap NumPy arrays contain resampled aggregate contrast estimates, with no
 individual losses, membership or sampling-index matrices.
 
-## Excluded contents
+## Individual records and supporting artifacts
 
-The manuscript PDF and LaTeX project, editorial prompts, private raw telemetry,
-per-episode losses, target-membership records, dated episode manifests,
-full protocol/dataset metadata, runtime history, SQLite state, predictions,
-training checkpoints and model weights are not distributed here. Original
-restricted evidence and the author manuscript package are maintained separately.
-Case labels H1, H2 and I1 are pseudonymous study identifiers, not a claim of
-anonymity for the underlying records.
+Raw telemetry, individual episode losses, target membership, detailed execution
+records, predictions and model checkpoints are maintained separately from the
+public aggregate release. Case labels H1, H2 and I1 identify the study
+installations without making individual records publicly available. Requests
+for these supporting artifacts follow the access process above.
 
 ## Reproduction levels
 
@@ -36,9 +47,9 @@ possible from this public package.
 
 Full recomputation requires authorized original data or restricted loss exports
 and calendar metadata, their recorded hashes, and the corresponding software.
-No open download or general data-access agreement has been established for those
-inputs. Access inquiries can be addressed through the repository maintainer;
-availability is subject to the data holders' authorization. Synthetic tests verify
+These inputs are available upon reasonable request, subject to the applicable
+access conditions. Their availability does not imply an unrestricted public
+download or transfer of data ownership. Synthetic tests verify
 software behavior and do not reproduce real-site effects.
 
 ## Terms

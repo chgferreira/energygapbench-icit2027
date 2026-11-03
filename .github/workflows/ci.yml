@@ -12,6 +12,8 @@ jobs:
       - uses: astral-sh/setup-uv@v6
       - run: uv venv --python 3.12 .venv
       - run: uv pip sync --python .venv/bin/python requirements.lock.txt
+      - name: Check parallel-reporting dependency
+        run: .venv/bin/python -c "from threadpoolctl import threadpool_limits; threadpool_limits(limits=1)"
       - run: .venv/bin/python -m pytest -q
       - name: Versioned forecast analysis checks
         run: .venv/bin/python -m unittest discover -s analysis/forecast_v2/tests -v

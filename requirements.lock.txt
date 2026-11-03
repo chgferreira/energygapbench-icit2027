@@ -52,6 +52,8 @@ scipy==1.18.1
     # via energygapbench
 six==1.17.0
     # via python-dateutil
+threadpoolctl==3.7.0
+    # via energygapbench
 tqdm==4.70.1
     # via energygapbench
 tzdata==2026.6

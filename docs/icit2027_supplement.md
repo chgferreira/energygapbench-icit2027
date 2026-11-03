@@ -1,6 +1,6 @@
 # ICIT 2027 experimental and operational supplement
 
-This supplement records details moved out of the six-page manuscript. The frozen
+This supplement accompanies the manuscript under review at IEEE ICIT 2027. The frozen
 run `conference-20261101T165101Z-1789282` remains authoritative. Analysis revisions
 are separately identified and do not rewrite its protocol or original outcomes.
 
@@ -36,6 +36,11 @@ Training corruption chooses equally between 20% point masking and blocks of
 normalization is distinct from the q95-minus-q05 reconstruction-score scale.
 
 ## Operational evidence
+
+The [reference server](reference_hardware.md) has 386 GB RAM and two Intel Xeon
+Gold 6130 processors at 2.10 GHz, with 32 physical cores, 64 logical processors
+and two NUMA nodes. CPU topology and RAM capacity were supplied by the authors
+on 3 November 2026; they complement the frozen runtime record without changing it.
 
 The run records Tesla V100-PCIE 16 GB, Python 3.12.16, PyTorch 2.9.1+cu126 and
 CUDA runtime 12.6. Main thread requests were 32. Correction scheduling changed

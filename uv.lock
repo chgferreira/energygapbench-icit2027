@@ -264,6 +264,7 @@ dependencies = [
     { name = "pyarrow" },
     { name = "pyyaml" },
     { name = "scipy" },
+    { name = "threadpoolctl" },
     { name = "tqdm" },
 ]
 
@@ -286,6 +287,7 @@ requires-dist = [
     { name = "pytest", marker = "extra == 'test'", specifier = ">=8" },
     { name = "pyyaml", specifier = ">=6" },
     { name = "scipy", specifier = ">=1.14" },
+    { name = "threadpoolctl", specifier = ">=3.6" },
     { name = "torch", marker = "extra == 'neural'", specifier = ">=2.5" },
     { name = "tqdm", specifier = ">=4.67" },
 ]

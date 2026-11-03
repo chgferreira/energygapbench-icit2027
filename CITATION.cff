@@ -23,7 +23,7 @@ authors:
   - family-names: "Ferreira"
     given-names: "Carlos H. G."
 license: MIT
-abstract: "Research software and versioned analyses accompanying a focused three-site study of power telemetry recovery, including the common-observed-target forecast analysis version 2. Original code is MIT; telemetry, derived data, manuscript content and third-party artifacts retain separate terms."
+abstract: "Research software and versioned analyses for a manuscript under review at IEEE ICIT 2027, reporting a focused three-site study of power telemetry recovery, including the common-observed-target forecast analysis version 2. Original code is MIT; telemetry, derived data, manuscript content and third-party artifacts retain separate terms."
 preferred-citation:
   type: unpublished
   title: "Energy-Informed Recovery of Power Telemetry After Communication Gaps"
@@ -45,4 +45,4 @@ preferred-citation:
       given-names: "Ana Paula C."
     - family-names: "Ferreira"
       given-names: "Carlos H. G."
-  notes: "Manuscript prepared for IEEE ICIT 2027. Conference acceptance, proceedings publication and a DOI are not claimed."
+  notes: "Manuscript under review at IEEE ICIT 2027. Study data are available from the authors upon reasonable request."

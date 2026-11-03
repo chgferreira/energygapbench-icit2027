@@ -41,11 +41,11 @@ tmp/
 *.out
 *.synctex.gz
 
-# Internal drafting notes and editorial prompts are not publication artifacts.
+# Local working material is maintained separately.
 editorial/
 analysis/editorial/
-*_revision_prompt*
-*_editorial_prompt*
+notes/
+drafts/
 
 # Public distribution is limited to code, documentation and aggregates.
 manuscript/

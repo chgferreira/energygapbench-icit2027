@@ -25,7 +25,9 @@ worker metadata. Correction/test phase rates are recalibrated when pool settings
 change; model-fitting/validation rates are retained. Omit overrides to use the YAML;
 repeat chosen runtime flags on later resumes.
 
-On a 48-core host with the existing main-process request of 32 threads, start with
+The [reference host](reference_hardware.md) has two Xeon Gold 6130 processors,
+32 physical cores, 64 logical processors and 386 GB RAM. With the existing
+main-process request of 32 threads, the recorded continuation used
 16 correction workers and 32 pending tasks, compared with the original 8/16. This
 can accelerate CPU-limited correction; it is not a measured twofold pipeline speedup.
 A larger pool needs evidence from actual CPU/queue throughput and affinity. Memory
