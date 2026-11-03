@@ -1,0 +1,644 @@
+schema_version: 1
+selection: Consolidated references and recent competitors; not universal best eleven
+methods:
+- name: BRITS
+  scientific_role: consolidated
+  paper: https://proceedings.neurips.cc/paper_files/paper/2018/hash/734e6bfcd358e25ac1db0a4241b95651-Abstract.html
+  doi_url: https://proceedings.neurips.cc/paper_files/paper/2018/hash/734e6bfcd358e25ac1db0a4241b95651-Abstract.html
+  year: 2018
+  publication_status: see_primary_source
+  repo: https://github.com/caow13/BRITS
+  commit: fc0a3a472a6d99a6934e471d40c25ed0b029b501
+  code_license: MIT
+  checkpoint_license: null
+  implementation: pypots_native_architecture_loss_conference_epoch_runner
+  implementation_status: integrated
+  validation_status: native_CPU_epoch_recovery_tests_and_common_environment_tiny_train_infer_passed
+  availability_reason: null
+  capabilities:
+    tasks:
+    - R
+    - O
+    univariate_D1: true
+    multivariate: true
+    counters_native: false
+    irregular_native: false
+    joint_samples: false
+    marginal_quantiles: false
+  context:
+    core: 512
+    validated_tiny: 24
+    maximum: null
+  normalization: training_channel_mean_std
+  local_training: required
+  local_cost_seconds: null
+  external_pretraining: not_applicable
+  pretraining_overlap: unknown
+  supports_resume:
+    training: completed_epoch_optimizer_rng_best_state_CPU_validated
+    inference: committed_query_shards
+  checkpoint_granularity: completed_epoch_optimizer_rng_best_state_and_query_shards
+  environment: requirements-server.txt
+  verified_at: '2026-11-01'
+  scientific_benchmark_run: false
+  conference_eligible: true
+  conference_blocker: null
+  wrapper_source: src/energygap/methods/conference_models.py
+  wrapper_version: 0.1.0
+  upstream_wrapper_version: pypots==1.5
+  wrapper_repo_commit: 2271533587bab250163437ed39cfe13cefd8b80a
+  wrapper_code_license: BSD-3-Clause
+  real_integration_pilot: L512_3sites_2epochs_16train_windows_no_convergence_claim
+  historical_standalone_audit:
+    environment: environments/neural.lock.txt
+    validation_status: tiny_cpu_mask_shape_observed_preservation_and_upstream_parity
+    supports_resume: false
+    checkpoint_granularity: completed_fit/query_only
+    conference_eligible: false
+    conference_blocker: exact native training recovery and protocol training-mask integration not validated
+    wrapper_source: src/energygap/methods/neural.py
+    local_cost_seconds: 0.026973583997460082
+    verified_at: '2026-10-31'
+  environment_constraints: constraints-server.txt
+  environment_policy: single_cuda_env
+  server_cuda_validation: required_before_execution; not tested on local macOS M4
+  current_environment_audit: artifacts/analyses/single_cuda_env_native_validation.json
+  conference_tasks:
+  - R
+- name: SAITS
+  scientific_role: consolidated
+  paper: https://doi.org/10.1016/j.eswa.2023.119619
+  doi_url: https://doi.org/10.1016/j.eswa.2023.119619
+  year: 2023
+  publication_status: see_primary_source
+  repo: https://github.com/WenjieDu/SAITS
+  commit: 660b87f19c1277065f314f24134f646229e89ca9
+  code_license: MIT
+  checkpoint_license: null
+  implementation: pypots_native_architecture_loss_conference_epoch_runner
+  implementation_status: integrated
+  validation_status: native_CPU_epoch_recovery_tests_and_common_environment_tiny_train_infer_passed
+  availability_reason: null
+  capabilities:
+    tasks:
+    - R
+    - O
+    univariate_D1: true
+    multivariate: true
+    counters_native: false
+    irregular_native: false
+    joint_samples: false
+    marginal_quantiles: false
+  context:
+    core: 512
+    validated_tiny: 24
+    maximum: null
+  normalization: training_channel_mean_std
+  local_training: required
+  local_cost_seconds: null
+  external_pretraining: not_applicable
+  pretraining_overlap: unknown
+  supports_resume:
+    training: completed_epoch_optimizer_rng_best_state_CPU_validated
+    inference: committed_query_shards
+  checkpoint_granularity: completed_epoch_optimizer_rng_best_state_and_query_shards
+  environment: requirements-server.txt
+  verified_at: '2026-11-01'
+  scientific_benchmark_run: false
+  conference_eligible: true
+  conference_blocker: null
+  wrapper_source: src/energygap/methods/conference_models.py
+  wrapper_version: 0.1.0
+  upstream_wrapper_version: pypots==1.5
+  wrapper_repo_commit: 2271533587bab250163437ed39cfe13cefd8b80a
+  wrapper_code_license: BSD-3-Clause
+  additional_variant:
+    name: saits_protocol_training_loop
+    source: src/energygap/methods/training.py
+    supports_resume: deterministic_cpu_optimizer_step_validated
+    dynamic_mask: balanced_points_blocks
+    scheduler: constant_lr
+    validation_selection: not_yet_integrated_in_conference_runner
+    audit: artifacts/reports/saits_recovery_comparison.json
+  real_integration_pilot: L512_3sites_2epochs_16train_windows_no_convergence_claim
+  historical_standalone_audit:
+    environment: environments/neural.lock.txt
+    validation_status: tiny_cpu_mask_shape_observed_preservation_and_upstream_parity
+    supports_resume: false
+    checkpoint_granularity: completed_fit/query_only
+    conference_eligible: false
+    conference_blocker: exact native training recovery and protocol training-mask integration not validated
+    wrapper_source: src/energygap/methods/neural.py
+    local_cost_seconds: 0.04402216599919484
+    verified_at: '2026-10-31'
+  environment_constraints: constraints-server.txt
+  environment_policy: single_cuda_env
+  server_cuda_validation: required_before_execution; not tested on local macOS M4
+  current_environment_audit: artifacts/analyses/single_cuda_env_native_validation.json
+  conference_tasks:
+  - R
+- name: CSDI
+  scientific_role: consolidated_probabilistic
+  paper: https://proceedings.neurips.cc/paper_files/paper/2021/hash/cfe8504bda37b575c70ee1a8276f3486-Abstract.html
+  doi_url: https://proceedings.neurips.cc/paper_files/paper/2021/hash/cfe8504bda37b575c70ee1a8276f3486-Abstract.html
+  year: 2021
+  publication_status: see_primary_source
+  repo: https://github.com/ermongroup/CSDI
+  commit: 7f24a436f08d98853a6b43d4f7f04e5a65ecdf27
+  code_license: MIT
+  checkpoint_license: null
+  implementation: pypots_native_architecture_loss_conference_epoch_runner
+  implementation_status: integrated
+  validation_status: native_CPU_epoch_recovery_tests_and_common_environment_tiny_train_infer_passed
+  availability_reason: null
+  capabilities:
+    tasks:
+    - R
+    - O
+    univariate_D1: true
+    multivariate: true
+    counters_native: false
+    irregular_native: false
+    joint_samples: true
+    marginal_quantiles: false
+  context:
+    core: 512
+    validated_tiny: 24
+    maximum: null
+  normalization: training_channel_mean_std
+  local_training: required
+  local_cost_seconds: null
+  external_pretraining: not_applicable
+  pretraining_overlap: unknown
+  supports_resume:
+    training: completed_epoch_optimizer_rng_best_state_CPU_validated
+    inference: committed_query_shards
+  checkpoint_granularity: completed_epoch_optimizer_rng_best_state_and_query_shards
+  environment: requirements-server.txt
+  verified_at: '2026-11-01'
+  scientific_benchmark_run: false
+  conference_eligible: true
+  conference_blocker: null
+  wrapper_source: src/energygap/methods/conference_models.py
+  wrapper_version: 0.1.0
+  upstream_wrapper_version: pypots==1.5
+  wrapper_repo_commit: 2271533587bab250163437ed39cfe13cefd8b80a
+  wrapper_code_license: BSD-3-Clause
+  real_integration_pilot: L512_3sites_2epochs_16train_windows_no_convergence_claim
+  historical_standalone_audit:
+    environment: environments/neural.lock.txt
+    validation_status: tiny_cpu_mask_shape_observed_preservation_and_upstream_parity
+    supports_resume: false
+    checkpoint_granularity: completed_fit/query_only
+    conference_eligible: false
+    conference_blocker: exact native training recovery and protocol training-mask integration not validated
+    wrapper_source: src/energygap/methods/neural.py
+    local_cost_seconds: 0.01554029100225307
+    verified_at: '2026-10-31'
+  environment_constraints: constraints-server.txt
+  environment_policy: single_cuda_env
+  server_cuda_validation: required_before_execution; not tested on local macOS M4
+  current_environment_audit: artifacts/analyses/single_cuda_env_native_validation.json
+  conference_tasks:
+  - R
+- name: ImputeFormer
+  scientific_role: multivariate_dependencies
+  paper: https://doi.org/10.1145/3637528.3671751
+  doi_url: https://doi.org/10.1145/3637528.3671751
+  year: 2024
+  publication_status: see_primary_source
+  repo: https://github.com/tongnie/ImputeFormer
+  commit: 1c3868cf499951ac43b4fc7280593fbb745f58c7
+  code_license: MIT
+  checkpoint_license: null
+  implementation: pypots_native_architecture_loss_conference_epoch_runner
+  implementation_status: integrated
+  validation_status: native_CPU_epoch_recovery_tests_and_common_environment_tiny_train_infer_passed
+  availability_reason: null
+  capabilities:
+    tasks:
+    - R
+    - O
+    univariate_D1: true
+    multivariate: true
+    counters_native: false
+    irregular_native: false
+    joint_samples: false
+    marginal_quantiles: false
+  context:
+    core: 512
+    validated_tiny: 24
+    maximum: null
+  normalization: training_channel_mean_std
+  local_training: required
+  local_cost_seconds: null
+  external_pretraining: not_applicable
+  pretraining_overlap: unknown
+  supports_resume:
+    training: completed_epoch_optimizer_rng_best_state_CPU_validated
+    inference: committed_query_shards
+  checkpoint_granularity: completed_epoch_optimizer_rng_best_state_and_query_shards
+  environment: requirements-server.txt
+  verified_at: '2026-11-01'
+  scientific_benchmark_run: false
+  conference_eligible: true
+  conference_blocker: null
+  wrapper_source: src/energygap/methods/conference_models.py
+  wrapper_version: 0.1.0
+  upstream_wrapper_version: pypots==1.5
+  wrapper_repo_commit: 2271533587bab250163437ed39cfe13cefd8b80a
+  wrapper_code_license: BSD-3-Clause
+  real_integration_pilot: L512_3sites_2epochs_16train_windows_no_convergence_claim
+  historical_standalone_audit:
+    environment: environments/neural.lock.txt
+    validation_status: tiny_cpu_mask_shape_observed_preservation_and_upstream_parity
+    supports_resume: false
+    checkpoint_granularity: completed_fit/query_only
+    conference_eligible: false
+    conference_blocker: exact native training recovery and protocol training-mask integration not validated
+    wrapper_source: src/energygap/methods/neural.py
+    local_cost_seconds: 0.005434708000393584
+    verified_at: '2026-10-31'
+  environment_constraints: constraints-server.txt
+  environment_policy: single_cuda_env
+  server_cuda_validation: required_before_execution; not tested on local macOS M4
+  current_environment_audit: artifacts/analyses/single_cuda_env_native_validation.json
+  conference_tasks:
+  - R
+- name: T1
+  scientific_role: multivariate_dependencies
+  paper: https://proceedings.iclr.cc/paper_files/paper/2026/hash/41ff2b921a875902fad0c1840593c19a-Abstract-Conference.html
+  doi_url: https://proceedings.iclr.cc/paper_files/paper/2026/hash/41ff2b921a875902fad0c1840593c19a-Abstract-Conference.html
+  year: 2026
+  publication_status: see_primary_source
+  repo: https://github.com/Oppenheimerdinger/T1
+  commit: 823b76aab57a2e60eb5029caab06fdfec8b19256
+  code_license: MIT
+  checkpoint_license: null
+  implementation: pinned_official_T1_native_epoch_runner
+  implementation_status: integrated
+  validation_status: native_CPU_epoch_recovery_tests_and_common_environment_tiny_train_infer_passed
+  availability_reason: null
+  capabilities:
+    tasks:
+    - R
+    - O
+    univariate_D1: true
+    multivariate: true
+    counters_native: false
+    irregular_native: false
+    joint_samples: false
+    marginal_quantiles: false
+  context:
+    core: 512
+    validated_tiny: 512
+    maximum: null
+  normalization: training_channel_scaler_plus_upstream_mask_aware_window
+  local_training: required
+  local_cost_seconds: null
+  external_pretraining: unknown
+  pretraining_overlap: unknown
+  supports_resume:
+    training: completed_epoch_optimizer_rng_best_state_CPU_validated
+    inference: committed_query_shards
+  checkpoint_granularity: completed_epoch_optimizer_rng_best_state_and_query_shards
+  environment: requirements-server.txt
+  verified_at: '2026-11-01'
+  scientific_benchmark_run: false
+  conference_eligible: true
+  conference_blocker: null
+  historical_standalone_audit:
+    environment: environments/neural.lock.txt
+    validation_status: D1_L512_native_parity_tiny_overfit_and_fitted_reload
+    supports_resume: false
+    checkpoint_granularity: completed_fit_and_query
+    conference_eligible: false
+    conference_blocker: full training schedule/optimizer-step recovery/protocol HPO not validated
+    local_cost_seconds: null
+    verified_at: '2026-10-31'
+  environment_constraints: constraints-server.txt
+  environment_policy: single_cuda_env
+  server_cuda_validation: required_before_execution; not tested on local macOS M4
+  current_environment_audit: artifacts/analyses/single_cuda_env_native_validation.json
+  conference_tasks:
+  - R
+  wrapper_source: src/energygap/methods/conference_models.py
+- name: MOMENT-1-base
+  scientific_role: general_foundation
+  paper: https://proceedings.mlr.press/v235/goswami24a.html
+  doi_url: https://proceedings.mlr.press/v235/goswami24a.html
+  year: 2024
+  publication_status: see_primary_source
+  repo: https://github.com/moment-timeseries-foundation-model/moment
+  commit: 38f7310ad594100747ca2a8357e9c7ca7d323e0e
+  code_license: MIT
+  checkpoint_license: mit
+  implementation: native_frozen_same_process_active_cuda_env
+  implementation_status: integrated
+  validation_status: common_environment_CPU_real_checkpoint_native_and_poisoning_checks_passed
+  availability_reason: null
+  capabilities:
+    tasks:
+    - R
+    - O
+    univariate_D1: true
+    multivariate: true
+    counters_native: false
+    irregular_native: false
+    joint_samples: false
+    marginal_quantiles: false
+  context:
+    core: 512
+    validated_tiny: 512
+    maximum: null
+  normalization: official RevIN mask*input_mask; all unavailable placeholders zeroed before normalizer;
+    observed-only scale
+  local_training: not_applicable
+  local_cost_seconds: null
+  external_pretraining: unknown
+  pretraining_overlap: unknown
+  supports_resume:
+    training: not_applicable
+    inference: committed_query_shards
+  checkpoint_granularity: committed_query_shard
+  environment: requirements-server.txt
+  verified_at: '2026-11-01'
+  scientific_benchmark_run: false
+  conference_eligible: true
+  conference_blocker: null
+  checkpoint: AutonLab/MOMENT-1-base
+  checkpoint_revision: 5e44b0ea26376a176360f87831124e018f876d96
+  checkpoint_sha256: 1a436826ffe618273ec62b9656dc4cab8edc470364f104e90542a4ebc14fb825
+  partial_patch_policy: upstream masks the entire patch when any position is hidden; admitted neighbors
+    inside partial patch are not tokens
+  wrapper_source: src/energygap/methods/frozen_active.py
+  dependency_override: false
+  real_pilot_audit: artifacts/reports/moment_real_isolated_audit.json
+  historical_standalone_audit:
+    environment: environments/moment.lock.txt
+    validation_status: native_parity_synthetic_and_18_real_queries_official_isolated_environment
+    supports_resume:
+      training: not_applicable
+      inference: query_shards
+    checkpoint_granularity: query
+    conference_eligible: true
+    conference_blocker: null
+    wrapper_source: src/energygap/methods/moment_subprocess.py
+    local_cost_seconds: 2.170128666999517
+    verified_at: '2026-10-31'
+    query_p50_seconds: 0.027214124998863554
+    peak_process_rss_bytes: 1165721600
+    package_version: 0.1.4
+  environment_constraints: constraints-server.txt
+  environment_policy: single_cuda_env
+  server_cuda_validation: required_before_execution; not tested on local macOS M4
+  current_environment_audit: artifacts/analyses/single_cuda_env_native_validation.json
+  conference_tasks:
+  - R
+  package_version: 0.1.5
+  source_archive_sha256: 987428c10b201f7af9598be8924c308d72c701bf6167175d0f8fb7a0f4271725
+  source_python_parity_with_0_1_4: all_21_Python_files_byte_identical
+- name: FIM
+  scientific_role: time_indexed_foundation_priority
+  paper: https://proceedings.iclr.cc/paper_files/paper/2025/hash/3d03791377a31cb3e7357014ba58eb80-Abstract-Conference.html
+  doi_url: https://proceedings.iclr.cc/paper_files/paper/2025/hash/3d03791377a31cb3e7357014ba58eb80-Abstract-Conference.html
+  year: 2025
+  publication_status: see_primary_source
+  repo: https://github.com/FIM4Science/OpenFIM
+  commit: cee2bb53be1e8e92b73f98dfdbe3605efc9119cc
+  code_license: MIT
+  checkpoint_license: unresolved_model_card
+  implementation: native_temporal_block_adapter_contract_only
+  implementation_status: unavailable
+  validation_status: contract_only_not_upstream_validated
+  availability_reason: Official temporal/pointwise checkpoint cards have unresolved weight license ([More
+    Information Needed]); native-weight inference not run.
+  capabilities:
+    tasks:
+    - R
+    - O
+    univariate_D1: not_audited
+    multivariate: true
+    counters_native: false
+    irregular_native: false
+    joint_samples: false
+    marginal_quantiles: false
+  context:
+    core: 512
+    validated_tiny: null
+    maximum: null
+  normalization: requires_upstream_audit
+  local_training: not_applicable
+  local_cost_seconds: null
+  external_pretraining: unknown
+  pretraining_overlap: unknown
+  supports_resume: false
+  checkpoint_granularity: not_validated
+  environment: separate_optional_environment
+  verified_at: '2026-10-31'
+  scientific_benchmark_run: false
+  conference_eligible: false
+  conference_blocker: Official temporal/pointwise checkpoint cards have unresolved weight license ([More
+    Information Needed]); native-weight inference not run.
+  checkpoint: null
+- name: TabPFN-TS
+  scientific_role: time_indexed_foundation_priority
+  paper: https://arxiv.org/abs/2511.05980
+  doi_url: https://arxiv.org/abs/2511.05980
+  year: 2026
+  publication_status: see_primary_source
+  repo: https://github.com/taharnbl/tsfm_imputation
+  commit: 10a05562eac73524d119883668fe4ebd3c3e9bf0
+  code_license: null
+  checkpoint_license: null
+  implementation: R24_source_audited_not_integrated
+  implementation_status: unavailable
+  validation_status: not_validated
+  availability_reason: R24 FourierTokenizer/TabPFN v2 wrapper inspected. Repository has no asserted open
+    license; exact checkpoint and redistribution terms unresolved. Generic TabPFN is not substituted.
+  capabilities:
+    tasks:
+    - R
+    - O
+    univariate_D1: not_audited
+    multivariate: true
+    counters_native: false
+    irregular_native: false
+    joint_samples: false
+    marginal_quantiles: false
+  context:
+    core: 512
+    validated_tiny: null
+    maximum: null
+  normalization: requires_upstream_audit
+  local_training: not_applicable
+  local_cost_seconds: null
+  external_pretraining: unknown
+  pretraining_overlap: unknown
+  supports_resume: false
+  checkpoint_granularity: not_validated
+  environment: separate_optional_environment
+  verified_at: '2026-10-31'
+  scientific_benchmark_run: false
+  conference_eligible: false
+  conference_blocker: R24 FourierTokenizer/TabPFN v2 wrapper inspected. Repository has no asserted open
+    license; exact checkpoint and redistribution terms unresolved. Generic TabPFN is not substituted.
+- name: MoTM
+  scientific_role: recent_foundation
+  paper: https://arxiv.org/abs/2511.05980
+  doi_url: https://arxiv.org/abs/2511.05980
+  year: 2026
+  publication_status: see_primary_source
+  repo: https://github.com/taharnbl/tsfm_imputation
+  commit: 10a05562eac73524d119883668fe4ebd3c3e9bf0
+  code_license: null
+  checkpoint_license: null
+  implementation: R24_source_audited_not_integrated
+  implementation_status: unavailable
+  validation_status: not_validated
+  availability_reason: R24 expects model directories with ckpt/weights.pt and .hydra/config.yaml for INR
+    mixture; those artifacts absent locally, no verified weight license.
+  capabilities:
+    tasks:
+    - R
+    - O
+    univariate_D1: not_audited
+    multivariate: true
+    counters_native: false
+    irregular_native: false
+    joint_samples: false
+    marginal_quantiles: false
+  context:
+    core: 512
+    validated_tiny: null
+    maximum: null
+  normalization: requires_upstream_audit
+  local_training: not_applicable
+  local_cost_seconds: null
+  external_pretraining: unknown
+  pretraining_overlap: unknown
+  supports_resume: false
+  checkpoint_granularity: not_validated
+  environment: separate_optional_environment
+  verified_at: '2026-10-31'
+  scientific_benchmark_run: false
+  conference_eligible: false
+  conference_blocker: R24 expects model directories with ckpt/weights.pt and .hydra/config.yaml for INR
+    mixture; those artifacts absent locally, no verified weight license.
+- name: TS-ICL
+  scientific_role: recent_foundation
+  paper: https://arxiv.org/abs/2606.05878
+  doi_url: https://arxiv.org/abs/2606.05878
+  year: 2026
+  publication_status: preprint
+  repo: https://github.com/EDF-Lab/ts-icl
+  commit: 6d4861e9eb29d59f05a0c253432afb2ae936e02a
+  code_license: TS-ICL Non-Commercial License v1.0 (June 9, 2026)
+  checkpoint_license: TS-ICL Non-Commercial License v1.0 (June 30, 2026)
+  implementation: native_frozen_same_process_active_cuda_env
+  implementation_status: integrated
+  validation_status: common_environment_CPU_real_checkpoint_native_and_poisoning_checks_passed
+  availability_reason: null
+  capabilities:
+    tasks:
+    - R
+    - O
+    univariate_D1: true
+    multivariate: true
+    counters_native: false
+    irregular_native: false
+    joint_samples: false
+    marginal_quantiles: true
+  context:
+    core: 512
+    validated_tiny: 512
+    maximum: null
+  normalization: native masked context observed only
+  local_training: not_applicable
+  local_cost_seconds: null
+  external_pretraining: unknown
+  pretraining_overlap: unknown
+  supports_resume:
+    training: not_applicable
+    inference: committed_query_shards
+  checkpoint_granularity: committed_query_shard
+  environment: requirements-server.txt
+  verified_at: '2026-11-01'
+  scientific_benchmark_run: false
+  conference_eligible: true
+  conference_blocker: null
+  wrapper_source: src/energygap/methods/frozen_active.py
+  checkpoint: taharnbl/TS-ICL:tsicl-v1.ckpt
+  checkpoint_revision: 19c94031439fb31f36ce395088ee50a6762d3774
+  checkpoint_sha256: a67ae9f694c2a83cfc8e7ec41745ff4f41a4a76ee2b17172ec3430d8d29da431
+  primary_point: native median 0.5
+  inspected_head_commit: 349f3eae4f01f78536b16a6ea53c0837760166ec
+  package_version: 0.2.0
+  historical_standalone_audit:
+    environment: environments/tsicl.lock.txt
+    validation_status: native_parity_availability_and_hidden_poisoning_validated
+    supports_resume:
+      training: not_applicable
+      inference: validated_query_shards
+    checkpoint_granularity: query
+    conference_eligible: false
+    conference_blocker: separate noncommercial worker not integrated into full conference orchestration;
+      contextual cost and all matrix requirements remain pending
+    wrapper_source: scripts/tsicl_worker.py
+    package_version: 0.2.1
+    local_cost_seconds: null
+    verified_at: '2026-10-31'
+    commit: 61d1e891a4aeab4b8aa4833c57480025c225b357
+    implementation: native_impute_isolated_noncommercial_worker
+  environment_constraints: constraints-server.txt
+  environment_policy: single_cuda_env
+  server_cuda_validation: required_before_execution; not tested on local macOS M4
+  current_environment_audit: artifacts/analyses/single_cuda_env_native_validation.json
+  conference_tasks:
+  - R
+  pipeline_git_blob: acd8c53f627e765429ba812d4ce14791c407c14d
+  native_pipeline_parity_with_0_2_1: byte_identical; model and data utility sources unchanged
+  dependency_override: false
+- name: CBiT
+  scientific_role: compressed_history
+  paper: https://proceedings.mlr.press/v306/fan26h.html
+  doi_url: https://proceedings.mlr.press/v306/fan26h.html
+  year: 2026
+  publication_status: see_primary_source
+  repo: null
+  commit: null
+  code_license: null
+  checkpoint_license: null
+  implementation: not_reproduced
+  implementation_status: unavailable
+  validation_status: not_validated
+  availability_reason: Paper landing page confirms ICML2026 and compressed-history method; no usable author-linked
+    implementation verified, no own_reimplementation claimed.
+  capabilities:
+    tasks:
+    - R
+    - O
+    univariate_D1: not_audited
+    multivariate: true
+    counters_native: false
+    irregular_native: false
+    joint_samples: false
+    marginal_quantiles: false
+  context:
+    core: 512
+    validated_tiny: null
+    maximum: null
+  normalization: not_audited
+  local_training: unknown_not_reproduced
+  local_cost_seconds: null
+  external_pretraining: unknown
+  pretraining_overlap: unknown
+  supports_resume: false
+  checkpoint_granularity: not_reproduced
+  environment: separate_optional_environment
+  verified_at: '2026-10-31'
+  scientific_benchmark_run: false
+  conference_eligible: false
+  conference_blocker: Paper landing page confirms ICML2026 and compressed-history method; no usable author-linked
+    implementation verified, no own_reimplementation claimed.
+conference_complete: false

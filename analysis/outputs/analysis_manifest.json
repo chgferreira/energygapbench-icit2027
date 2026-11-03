@@ -1,0 +1,49 @@
+{
+  "run_id": "conference-20261101T165101Z-1789282",
+  "sources_sha256": {
+    "protocol.lock.json": "3939cd8f9c82558673fa86e59970c11c7d1c41c75c488381dd9602d547619cb0",
+    "protocol.lock.sha256": "a0f13987045631c14c21aa522f7ed3b0f8bbc1cc5d7ed900acf734252b6b9608",
+    "reports/episode_losses.parquet": "fa698c373d336f485c722dcbe63cf2464d7062fbc3ec3ea51549c2a742d67894",
+    "reports/core_aggregate.csv": "7b139854966577f6b0d472aaecf6c9fe30290872a6092db4c819e290af13c751",
+    "reports/main_table.csv": "feed8fb59afe63fa2760d3c2fbd5d6b22d7ff4f5da96b9404c04ff4a1ed3796b",
+    "reports/selected_baseline_validation.csv": "8b5c8bb8c45a7d214c772a26255937a901ddebb5f4227373bfd8939abf9b214d",
+    "reports/contrasts.json": "4a8b685b26a8567d6d22b1a498389e243fc897e0c800f401a4a2df1ba0efe285",
+    "reports/contrasts_block_sensitivity.json": "53debd256b9fba72c108bef573901766524927e7bb30e13520df233187bc6c6c",
+    "reports/summary.json": "f961d37c3ddacb9630c614a3e064e3bf32ba7ebc9b81e2c700fc3a994609f20f",
+    "reports/report_complete.json": "caee30a01b8d66f7724a3c2107ccf457f6120f70fa6e6786d3af5c475f92abed"
+  },
+  "script_sha256": "302a9e9f10360480362d99a6edb5feb518145f603ac572e591f58720017a4ea9",
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "pyarrow": "26.0.0",
+    "matplotlib": "3.11.2"
+  },
+  "outputs_sha256": {
+    "analysis_validation.json": "6a0cf7a1723f329b83582a3cb5ef9fc5175c72b97ef7c49410684da22c2ce17f",
+    "episode_support.csv": "9cc4d18adc7d061e990ae106bd2ed22d5e111e41cb3e46627be469239fd74bc4",
+    "figures/reconstruction_contrasts.pdf": "d341a14cfe73bec1d9fceaf0a35da84cc4d6a27427dbe83046c79e8b6d260763",
+    "figures/reconstruction_contrasts.png": "99e3adc84a8fc185ae489f8fe60516327cbb82c5a5d739f13d5d82b50e3738c1",
+    "figures/reconstruction_contrasts.svg": "d78ee3b9d71846c4ec748cbaa74acc8b6427210ca48c494ee6e9dc71218fbab6",
+    "figures/reconstruction_duration.pdf": "ba018f0d21c2733238c922554bb9ce88c648d37f2fec18e27e74adf78aadd3c7",
+    "figures/reconstruction_duration.png": "222a56923a398a00441a2295222e476c1da9b3142d39aa44f8f83e35bc09d0d1",
+    "figures/reconstruction_duration.svg": "2fd02b0d82043331b3641fc6bee6115684fc3a25513ce5c352553291b99b82b8",
+    "figures/reconstruction_methods.pdf": "c318b8a823503a18e1d4a0c1ec37c9970f34bf015f8759466184897af7e7f9cb",
+    "figures/reconstruction_methods.png": "e4f3c46b8fcbae1032778bcf10be8beea73d6087fd15cb04e5eae87301aa17b9",
+    "figures/reconstruction_methods.svg": "f730ab8a3ca14f96e851afbf9beba29689b48d02f734701a688d4fe23ef1295e",
+    "frozen_block_sensitivity.csv": "9e15429c4966bc64c1803a5747e46a0d9b677b17aee6107d1568634b8c70947b",
+    "frozen_contrasts.csv": "784dfd917dbfa3843a42aca35a95328fe641f8b90d0ca7e1060e30246f01ad40",
+    "posthoc_available_target_1h.csv": "c8349c9fffa1a4658db92f7a5c94fca6aa0e437909afa801622835455256ef5c",
+    "posthoc_available_target_1h_support.csv": "f7a24d417571b004ee7c09ee72efbfcce37a74b01821046a051d548a6b32e1b2",
+    "reconstruction_all_methods_all_hypotheses.csv": "b1860a8a9de6462632ef59e2215e901a931a7ffc534af545e0d305ab23a1c487",
+    "reconstruction_cells.csv": "947dca6aac01f26aee4fb1b042f067e689b182fd448929410fdd202f2e456d0b",
+    "reproduced_primary_estimates.csv": "3d00749fda121193810d883c8247093b298df6dda3aaab08fe63bd529e561824",
+    "selected_baselines.csv": "1c4157965a25ac1dddf38aef7f1533e6227422175b8c4405988ef4f5b5d24018",
+    "selected_policy_by_duration.csv": "3ae67d97c747e65f9188632c8194b962d74fd2a0422456ef6171e84850050e0f",
+    "selected_policy_overall.csv": "97f966934a34907026fe3ad513b834a19e7b7241c5b7bc4d3ba18bb1e4e2ca73",
+    "tables/methods_nmae.tex": "d72d0732aad3f0ee1e38625781a26f60e4eb9217e3076797eaebc2d6dfbea31f"
+  },
+  "aggregation": "Mean seed losses already supplied per episode; equal episode means within duration/fold; equal weights over the 3 durations and 3 folds; sites separate.",
+  "figure_intervals": "Frozen 7-day moving-block 95% percentile intervals; exploratory and conditional. Hollow H1 markers flag insufficient declared temporal support."
+}

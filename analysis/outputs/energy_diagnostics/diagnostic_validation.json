@@ -1,0 +1,28 @@
+{
+  "calibration_provenance": "reconstructed_from_hash_verified_original_data_and_frozen_contract",
+  "equality_does_not_identify_solver_cause": true,
+  "inputs_sha256": {
+    "protocol.lock.json": "3939cd8f9c82558673fa86e59970c11c7d1c41c75c488381dd9602d547619cb0",
+    "raw_data/I1.csv": "dbd907f27f852e2bee5ea8b930f20455e87e65873833ad07b35b12065edab553",
+    "reports/episode_losses.parquet": "fa698c373d336f485c722dcbe63cf2464d7062fbc3ec3ea51549c2a742d67894"
+  },
+  "limitations": [
+    "The compact bundle does not retain original per-query solver diagnostics or selected correction parameters.",
+    "Recomputed calibration identifies current source behavior on frozen inputs, not a recovered original solver log."
+  ],
+  "mechanism": "calibrate_tolerance retains only positive empirical q95/resolution values; a zero export q95 with no known resolution becomes tau_export=None even with ample support. The interval-mean wrapper requires both directional tolerances before forming net tau, so this blocks its constraint. Instantaneous correction can retain the admissible import direction. No tolerance policy or original result was changed.",
+  "original_run_modified": false,
+  "outputs_sha256": {
+    "interval_mean_loss_equality.csv": "ed2c95cd508058d78edffd7d3253c227f32839dea4b76346abab51b8cc72b7d2",
+    "recorded_correction_parameters.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "recorded_solver_statuses.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "train_tolerance_audit.csv": "068fae424ff3c7d1e5ad47a093011483db5a4dc9305bfc573a17a7d7964c6be1"
+  },
+  "physical_semantics_confirmed": false,
+  "reconstructed_calibration_rows": 54,
+  "recorded_diagnostic_status": "not_in_compact_bundle",
+  "run_id": "conference-20261101T165101Z-1789282",
+  "script_sha256": "5b1d342e8971beb2058a3f66937c0f16d6ca61f13430ed9deae5f492738922f3",
+  "source_sha256": "7222dd64095b1eeab5bc31022be86fccd6ff6e36ae2a5ceda5ee958b3fdaa880",
+  "zero_export_tau_strata": 27
+}

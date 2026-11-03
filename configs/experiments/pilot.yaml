@@ -1,0 +1,10 @@
+profile: pilot
+sites: [H1, H2, I1]
+information_tier: P
+max_episodes: 2
+conditions: [C3, C4, C5]
+mask_seeds: [2001]
+budget_total_hours: 0.1
+physical_correction: false
+physical_confirmatory_status: blocked_measurement_semantics
+scientific_benchmark_complete: false

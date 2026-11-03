@@ -1,0 +1,30 @@
+{
+  "analysis_revision": "energy-control-paired-contrasts-v1",
+  "attempts_per_contrast": 10000,
+  "confirmatory": false,
+  "control_parameters_reselected": false,
+  "estimand": "Episode-level E-minus-control loss differences, equally averaged within each duration/fold and equally across the three durations and three folds; sites separate.",
+  "fold_duration_policy_cells": 54,
+  "independent_confirmation": false,
+  "inputs_unchanged": true,
+  "limits": [
+    "The control analysis was designed after the original results were inspected.",
+    "Both controls use constant displacement and gamma=0; comparison against flexible E is not an isolated deadzone or smoothness ablation.",
+    "The two scalar policies have separately validation-selected settings; differences do not isolate a numerical parameter while holding all others fixed.",
+    "Original E trajectories are not reconstructed; their archived losses are preserved.",
+    "Intervals condition on realized masks and fitted/selected policies; H1 fails the main seven-day support rule.",
+    "No meter semantics, external generalization, or independent confirmation is established."
+  ],
+  "main_block_days": 7,
+  "multiplicity": "18 exploratory site/control/block-length summaries; pointwise intervals and unadjusted exploratory p-values; no familywise or FDR control claim.",
+  "original_P_and_E_losses_verified_against_frozen_archive": true,
+  "paired_policy_rows": 137160,
+  "post_hoc": true,
+  "saved_validation_choices_verified": 18,
+  "seed": 20261031,
+  "sensitivity_block_days": [
+    2,
+    14
+  ],
+  "unique_episode_instances": 68580
+}

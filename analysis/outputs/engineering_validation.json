@@ -1,0 +1,142 @@
+{
+  "analysis": "descriptive_engineering_summary",
+  "run_id": "conference-20261101T165101Z-1789282",
+  "hypothesis": "instantaneous",
+  "illustrative_base": "linear",
+  "primary_comparator_B_unchanged": true,
+  "inference": "No new intervals or tests. The 27 site/fold/duration means are not independent replicates or a binomial sample.",
+  "aggregation": "Original equal-duration/equal-fold site means. Per-duration inputs equally average folds. Relative reductions are ratios of these means, not mean per-episode percentages.",
+  "units": {
+    "mae": "kW",
+    "relative_changes": "percent; positive means lower corrected error"
+  },
+  "range_definition": "Table ranges are the minimum and maximum percentage nMAE decreases over nine fold-by-duration cells within each site, not uncertainty intervals. Separate CSV columns also retain ranges over three duration means after averaging folds.",
+  "duration_cells": 9,
+  "duration_cells_with_lower_corrected_nmae": 9,
+  "site_duration_to_core_checks": [
+    {
+      "site": "H1",
+      "policy": "P",
+      "absolute_difference": 1.2415068972870813e-13
+    },
+    {
+      "site": "H1",
+      "policy": "E",
+      "absolute_difference": 7.854827899222983e-15
+    },
+    {
+      "site": "H2",
+      "policy": "P",
+      "absolute_difference": 1.8160473125305998e-13
+    },
+    {
+      "site": "H2",
+      "policy": "E",
+      "absolute_difference": 8.931744233109384e-14
+    },
+    {
+      "site": "I1",
+      "policy": "P",
+      "absolute_difference": 3.75324771262342e-14
+    },
+    {
+      "site": "I1",
+      "policy": "E",
+      "absolute_difference": 1.1088352458443751e-14
+    }
+  ],
+  "fold_duration_cells": 27,
+  "fold_duration_cells_with_lower_corrected_nmae": 27,
+  "all_fold_duration_cells_improve": true,
+  "fold_duration_to_core_checks": [
+    {
+      "site": "H1",
+      "policy": "P",
+      "metric": "nmae",
+      "absolute_difference": 0.0
+    },
+    {
+      "site": "H1",
+      "policy": "E",
+      "metric": "nmae",
+      "absolute_difference": 2.7755575615628914e-17
+    },
+    {
+      "site": "H1",
+      "policy": "P",
+      "metric": "mae_kw",
+      "absolute_difference": 5.551115123125783e-17
+    },
+    {
+      "site": "H1",
+      "policy": "E",
+      "metric": "mae_kw",
+      "absolute_difference": 0.0
+    },
+    {
+      "site": "H2",
+      "policy": "P",
+      "metric": "nmae",
+      "absolute_difference": 0.0
+    },
+    {
+      "site": "H2",
+      "policy": "E",
+      "metric": "nmae",
+      "absolute_difference": 0.0
+    },
+    {
+      "site": "H2",
+      "policy": "P",
+      "metric": "mae_kw",
+      "absolute_difference": 0.0
+    },
+    {
+      "site": "H2",
+      "policy": "E",
+      "metric": "mae_kw",
+      "absolute_difference": 0.0
+    },
+    {
+      "site": "I1",
+      "policy": "P",
+      "metric": "nmae",
+      "absolute_difference": 0.0
+    },
+    {
+      "site": "I1",
+      "policy": "E",
+      "metric": "nmae",
+      "absolute_difference": 0.0
+    },
+    {
+      "site": "I1",
+      "policy": "P",
+      "metric": "mae_kw",
+      "absolute_difference": 0.0
+    },
+    {
+      "site": "I1",
+      "policy": "E",
+      "metric": "mae_kw",
+      "absolute_difference": 0.0
+    }
+  ],
+  "sources_sha256": {
+    "reports/core_aggregate.csv": "7b139854966577f6b0d472aaecf6c9fe30290872a6092db4c819e290af13c751",
+    "reports/main_table.csv": "feed8fb59afe63fa2760d3c2fbd5d6b22d7ff4f5da96b9404c04ff4a1ed3796b",
+    "analysis_outputs/selected_policy_by_duration.csv": "3ae67d97c747e65f9188632c8194b962d74fd2a0422456ef6171e84850050e0f"
+  },
+  "script_sha256": "a43ae9bb81b6d21ff62dae1ba419e50a89dfff5f95449f96df1940afeaedaebb",
+  "outputs_sha256": {
+    "engineering_methods.csv": "b49467af3ce6171507b6b6e09d15f690665cf041fbeadcb1905c0cc5963fd933",
+    "engineering_summary.csv": "3cbcc171058988cd00915ec7fdd8ecbba1585c6a141890bd138bdec7184d827d",
+    "engineering_by_duration.csv": "53c8cc28554229a5abf2ef78583056a18e6c9b6ad0c76581493efd8ac0807b18",
+    "engineering_by_fold_duration.csv": "978da15e9dc1ab9ea7658035b95176db3e4cd3b3099f548afd4979075e8b3555",
+    "tables/engineering_summary.tex": "74be7edc2e19114389aec8bc43cfe8574684f81009a3685950351db16965d55f"
+  },
+  "software": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0"
+  }
+}

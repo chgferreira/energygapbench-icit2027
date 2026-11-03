@@ -1,0 +1,17 @@
+site,method,hypothesis,episodes,equal_nmae,equal_mae_kw,max_abs_nmae_difference
+I1,median,interval_mean_start,26690,26690,26690,0.0
+I1,median,interval_mean_end,26690,26690,26690,0.0
+I1,locf,interval_mean_start,26690,26690,26690,0.0
+I1,locf,interval_mean_end,26690,26690,26690,0.0
+I1,linear,interval_mean_start,26690,26690,26690,0.0
+I1,linear,interval_mean_end,26690,26690,26690,0.0
+I1,seasonal,interval_mean_start,26690,26690,26690,0.0
+I1,seasonal,interval_mean_end,26690,26690,26690,0.0
+I1,kalman_filter,interval_mean_start,26690,26690,26690,0.0
+I1,kalman_filter,interval_mean_end,26690,26690,26690,0.0
+I1,kalman_smoother,interval_mean_start,26690,26690,26690,0.0
+I1,kalman_smoother,interval_mean_end,26690,26690,26690,0.0
+I1,SAITS,interval_mean_start,26690,26690,26690,0.0
+I1,SAITS,interval_mean_end,26690,26690,26690,0.0
+I1,MOMENT-1-base,interval_mean_start,26690,26690,26690,0.0
+I1,MOMENT-1-base,interval_mean_end,26690,26690,26690,0.0

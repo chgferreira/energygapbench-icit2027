@@ -1,0 +1,9 @@
+profile: smoke
+synthetic: true
+context: 512
+days: 35
+max_episodes: 2
+conditions: [C3, C4, C5]
+mask_seeds: [2001]
+budget_total_hours: 0.1
+scientific_benchmark_complete: false

@@ -1,0 +1,15 @@
+resume: auto
+checkpoint_optimizer_steps: 50
+checkpoint_active_seconds: 60
+keep_last_checkpoints: 2
+inference_shard_queries: 32
+bootstrap_shard_replicates: 100
+progress: log
+progress_refresh_seconds: 1
+status_snapshot_seconds: 10
+timezone: America/Sao_Paulo
+max_retries: 2
+retry_backoff_seconds: 1
+workers: 1
+device: auto
+budget_total_hours: 1

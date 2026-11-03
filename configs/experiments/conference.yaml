@@ -1,0 +1,12 @@
+profile: conference
+protocol: configs/protocols/main.yaml
+registry: model_registry.yaml
+conditions: [C1, C2, C3, C4, C5, C6]
+max_trials: 6
+max_epochs: 100
+patience: 10
+samples_scientific: 100
+samples_pilot: 10
+budget_total_hours: 1
+status: incomplete
+requires_cost_calibration: true

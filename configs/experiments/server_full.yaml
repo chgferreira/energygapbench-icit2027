@@ -1,0 +1,39 @@
+schema_version: 1
+profile: conference
+environment_policy: single_cuda_env
+scope: full_available_R_P_and_conditional_energy_core
+sites: [H1, H2, I1]
+folds: [1, 2, 3]
+conditions: [C1, C2, C3, C4, C5, C6]
+methods: [median, locf, linear, seasonal, kalman_filter, kalman_smoother, BRITS, SAITS, CSDI, ImputeFormer, T1, MOMENT-1-base, TS-ICL, FIM, TabPFN-TS, MoTM, CBiT]
+require_available: [BRITS, SAITS, CSDI, ImputeFormer, T1, MOMENT-1-base, TS-ICL]
+context: 512
+training_stride: 288
+max_training_windows: null
+max_episodes: null
+train_seeds: [11, 23, 47]
+validation_mask_seeds: [1001, 1002, 1003, 1004, 1005]
+test_mask_seeds: [2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010]
+hpo_trials: 6
+max_epochs: 100
+patience: 10
+batch_size: 32
+inference_batch_size: 256
+csdi_sample_batch_size: 32
+brits_execution: vectorized
+energy_cpu_workers: 8
+energy_cpu_max_pending: 16
+samples: 100
+forecast_horizons_seconds: [1800, 3600, 10800, 21600]
+physical_hypotheses: [instantaneous, interval_mean_start, interval_mean_end]
+physical_conditions: [C3, C4, C5]
+physical_confirmatory: false
+bootstrap_attempts: 10000
+block_days: 7
+block_sensitivity_days: [2, 14]
+shard_size: 16
+frozen_shard_size: 128
+progress_refresh_seconds: 1
+progress_persist_seconds: 10
+status_snapshot_seconds: 60
+heartbeat_seconds: 15

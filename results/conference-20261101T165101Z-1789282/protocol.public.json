@@ -1,0 +1,268 @@
+{
+  "artifact_kind": "public_protocol_extract_not_original_lock",
+  "omitted": [
+    "dataset-level record metadata",
+    "availability paths",
+    "progress",
+    "runtime history"
+  ],
+  "original_lock_byte_sha256": "3939cd8f9c82558673fa86e59970c11c7d1c41c75c488381dd9602d547619cb0",
+  "original_scientific_fingerprint": "81208d1159a0f0c0755ff2b27cbf8e58e325d3b8b494ee6da6ecb7949e852603",
+  "run_id": "conference-20261101T165101Z-1789282",
+  "settings": {
+    "block_days": 7,
+    "bootstrap_attempts": 10000,
+    "conditions": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "context": 512,
+    "execution": {
+      "batched_timing_policy": "amortized_compute_cost_separate_from_isolated_query_latency",
+      "brits_execution": "vectorized",
+      "csdi_sample_batch_size": 32,
+      "device": "cuda:0",
+      "energy_cpu_max_pending": 16,
+      "energy_cpu_workers": 8,
+      "energy_worker_policy": "spawn_CPU_only_one_BLAS_thread_ordered_episode_tasks",
+      "epoch_validation_max_per_stratum": 20,
+      "epoch_validation_seed": 1729,
+      "hpo_max_epochs": 20,
+      "hpo_patience": 5,
+      "hpo_trial_indices": [
+        0,
+        1
+      ],
+      "inference_batch_size": 256,
+      "inference_policy": "deterministic_query_batches_oom_halving_cached_BRITS_CSDI_native_sample_batches_MOMENT_batches_TSICL_serial",
+      "packages": {
+        "huggingface-hub": "0.34.4",
+        "momentfm": "0.1.5",
+        "numpy": "2.2.6",
+        "pandas": "2.2.3",
+        "pyarrow": "19.0.1",
+        "pypots": "1.5",
+        "scikit-learn": "1.8.0",
+        "scipy": "1.15.3",
+        "torch": "2.9.1+cu126",
+        "transformers": "4.57.6",
+        "tsicl": "0.2.0"
+      },
+      "python_version": "3.12.16",
+      "thread_policy": "intraop_requested_interop_1_serial_gpu",
+      "threads": 32,
+      "torch_runtime": {
+        "arch_list": [
+          "sm_50",
+          "sm_60",
+          "sm_70",
+          "sm_75",
+          "sm_80",
+          "sm_86",
+          "sm_90"
+        ],
+        "backend": "pytorch",
+        "compute_capability": [
+          7,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cuda_runtime": "12.6",
+        "cudnn_allow_tf32": true,
+        "cudnn_version": 91002,
+        "deterministic_algorithms": false,
+        "device": "cuda:0",
+        "gpu_name": "Tesla V100-PCIE-16GB",
+        "matmul_allow_tf32": false,
+        "precision_policy": "existing_float32_models_float64_ridge_no_automatic_mixed_precision",
+        "torch_version": "2.9.1+cu126",
+        "total_memory_bytes": 16928342016
+      },
+      "validation_policy": "fixed_metadata_stratified_panel_every_epoch;full_HPO_final_scoring_and_final_validation_test"
+    },
+    "experiment_settings": {
+      "batch_size": 32,
+      "block_days": 7,
+      "block_sensitivity_days": [
+        2,
+        14
+      ],
+      "bootstrap_attempts": 10000,
+      "brits_execution": "vectorized",
+      "condition_omission_reasons": {
+        "C1": "Pointwise missingness is outside the primary contiguous communication-gap question.",
+        "C2": "Pointwise missingness is outside the primary contiguous communication-gap question.",
+        "C6": "Training-derived mixed gap patterns are deferred robustness experiments."
+      },
+      "conditions": [
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "context": 512,
+      "csdi_sample_batch_size": 32,
+      "energy_cpu_max_pending": 16,
+      "energy_cpu_workers": 8,
+      "environment_policy": "single_cuda_env",
+      "epoch_validation_max_per_stratum": 20,
+      "epoch_validation_seed": 1729,
+      "folds": [
+        1,
+        2,
+        3
+      ],
+      "forecast_horizons_seconds": [
+        1800,
+        3600,
+        10800,
+        21600
+      ],
+      "frozen_shard_size": 128,
+      "heartbeat_seconds": 15,
+      "hpo_max_epochs": 20,
+      "hpo_patience": 5,
+      "hpo_trial_indices": [
+        0,
+        1
+      ],
+      "hpo_trials": 2,
+      "inference_batch_size": 256,
+      "max_episodes": null,
+      "max_epochs": 100,
+      "max_training_windows": null,
+      "methods": [
+        "median",
+        "locf",
+        "linear",
+        "seasonal",
+        "kalman_filter",
+        "kalman_smoother",
+        "SAITS",
+        "MOMENT-1-base"
+      ],
+      "omission_reasons": {
+        "BRITS": "Deferred recurrent comparator after observed high per-fit cost; not selected by test accuracy.",
+        "CBiT": "Outside focused scope; catalogue records unverified reproduction separately.",
+        "CSDI": "Deferred diffusion and joint-sample extension; focused study evaluates point reconstruction.",
+        "FIM": "Outside focused scope; catalogue records unresolved checkpoint license separately.",
+        "ImputeFormer": "Deferred expanded locally trained comparison under the declared compute budget.",
+        "MoTM": "Outside focused scope; catalogue records unresolved checkpoint bundle separately.",
+        "T1": "Deferred expanded locally trained comparison under the declared compute budget.",
+        "TS-ICL": "Deferred serial pretrained comparison under the declared compute budget.",
+        "TabPFN-TS": "Outside focused scope; catalogue records unresolved audited implementation separately."
+      },
+      "patience": 10,
+      "physical_conditions": [
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "physical_confirmatory": false,
+      "physical_hypotheses": [
+        "instantaneous",
+        "interval_mean_start",
+        "interval_mean_end"
+      ],
+      "profile": "conference",
+      "progress_persist_seconds": 10,
+      "progress_refresh_seconds": 1,
+      "require_available": [
+        "SAITS",
+        "MOMENT-1-base"
+      ],
+      "samples": 100,
+      "schema_version": 1,
+      "scope": "focused_R_core_point_recovery_and_conditional_energy",
+      "shard_size": 16,
+      "sites": [
+        "H1",
+        "H2",
+        "I1"
+      ],
+      "status_snapshot_seconds": 60,
+      "study_profile": "focused_24h",
+      "test_mask_seeds": [
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "train_seeds": [
+        11,
+        23,
+        47
+      ],
+      "training_stride": 288,
+      "validation_mask_seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005
+      ]
+    },
+    "folds": [
+      1,
+      2,
+      3
+    ],
+    "max_episodes": null,
+    "methods": [
+      "median",
+      "locf",
+      "linear",
+      "seasonal",
+      "kalman_filter",
+      "kalman_smoother",
+      "SAITS",
+      "MOMENT-1-base"
+    ],
+    "physical_confirmatory": false,
+    "physical_hypotheses": [
+      "instantaneous",
+      "interval_mean_start",
+      "interval_mean_end"
+    ],
+    "physical_semantics_policy": "exploratory_conditional_unconfirmed_measurement_semantics",
+    "profile": "conference",
+    "schema_version": 2,
+    "scope": "focused_R_core_point_recovery_and_conditional_energy",
+    "sites": [
+      "H1",
+      "H2",
+      "I1"
+    ],
+    "test_mask_seeds": [
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010
+    ],
+    "train_seeds": [
+      11,
+      23,
+      47
+    ],
+    "validation_mask_seeds": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005
+    ]
+  },
+  "source_code_hash": "d62678487fdd69ee05fa444675099bb5f7ad823fa476994662f168da5d17554b"
+}

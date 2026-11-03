@@ -1,0 +1,43 @@
+name: FIM
+scientific_role: time_indexed_foundation_priority
+paper: https://proceedings.iclr.cc/paper_files/paper/2025/hash/3d03791377a31cb3e7357014ba58eb80-Abstract-Conference.html
+doi_url: https://proceedings.iclr.cc/paper_files/paper/2025/hash/3d03791377a31cb3e7357014ba58eb80-Abstract-Conference.html
+year: 2025
+publication_status: see_primary_source
+repo: https://github.com/FIM4Science/OpenFIM
+commit: cee2bb53be1e8e92b73f98dfdbe3605efc9119cc
+code_license: MIT
+checkpoint_license: unresolved_model_card
+implementation: native_temporal_block_adapter_contract_only
+implementation_status: unavailable
+validation_status: contract_only_not_upstream_validated
+availability_reason: Official temporal/pointwise checkpoint cards have unresolved
+  weight license ([More Information Needed]); native-weight inference not run.
+capabilities:
+  tasks:
+  - R
+  - O
+  univariate_D1: not_audited
+  multivariate: true
+  counters_native: false
+  irregular_native: false
+  joint_samples: false
+  marginal_quantiles: false
+context:
+  core: 512
+  validated_tiny: null
+  maximum: null
+normalization: requires_upstream_audit
+local_training: not_applicable
+local_cost_seconds: null
+external_pretraining: unknown
+pretraining_overlap: unknown
+supports_resume: false
+checkpoint_granularity: not_validated
+environment: separate_optional_environment
+verified_at: '2026-10-31'
+scientific_benchmark_run: false
+conference_eligible: false
+conference_blocker: Official temporal/pointwise checkpoint cards have unresolved weight
+  license ([More Information Needed]); native-weight inference not run.
+checkpoint: null

@@ -1,0 +1,26 @@
+{
+  "explanation": "z is the deadzone width in units of train tolerance. Each policy is separately selected on validation. Both scalar controls use gamma=0. This is not an isolated ablation of the flexible correction.",
+  "input_sha256": {
+    "control_paired_losses.parquet": "c6daa27afd296eaa7bc158b4ecec5e07adb97c3f3173f4b741321ed13c94e200",
+    "control_protocol.json": "8712d9791b666ae067fc8bfff9c32c224b093ee5828bb06354493cea4d1ac429",
+    "control_validation.json": "6d82a211e6aaab62ee5427294b4fb12b859fc020b55df01550d93ef5415e1e0d"
+  },
+  "maximum_original_P_absolute_error": 7.105427357601002e-15,
+  "no_inferential_claims": true,
+  "original_P_reproduced_episodes": 89175,
+  "outputs_sha256": {
+    "control_by_fold_duration.csv": "8d7d425b6e7f8590819f4762a55c009d4102385f122d36c4a966d182afbfbde8",
+    "control_status_counts.csv": "a546bd99e77a28b815122c8b4dbfdbddf36b76b280bacf7ae8a73eb9eb40e3f0",
+    "control_summary.csv": "6ec6edddb153416ce456d0e7a28dd0f1782cd35a5e81c26ca8a8fe049d881262",
+    "tables/energy_controls.tex": "8a2c5ffa24fa90ffe53a2fb5a7466a8f76fe08fafb4f383055d172a1e31659b8"
+  },
+  "paired_rows": 137160,
+  "policies": [
+    "uniform_shift_tolerant",
+    "uniform_shift_no_deadzone"
+  ],
+  "script_sha256": "c46f70e0f0b4ca0559f8f2dbf53a2ca0086b52da2224658af2f50ee3c8a0cb11",
+  "site_fold_duration_policy_cells": 54,
+  "status": "reproduced_complete_descriptive_control_summary",
+  "unique_test_episodes": 68580
+}

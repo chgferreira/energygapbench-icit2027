@@ -1,0 +1,47 @@
+name: CSDI
+scientific_role: consolidated_probabilistic
+paper: https://proceedings.neurips.cc/paper_files/paper/2021/hash/cfe8504bda37b575c70ee1a8276f3486-Abstract.html
+doi_url: https://proceedings.neurips.cc/paper_files/paper/2021/hash/cfe8504bda37b575c70ee1a8276f3486-Abstract.html
+year: 2021
+publication_status: see_primary_source
+repo: https://github.com/ermongroup/CSDI
+commit: 7f24a436f08d98853a6b43d4f7f04e5a65ecdf27
+code_license: MIT
+checkpoint_license: null
+implementation: pypots
+implementation_status: integrated
+validation_status: tiny_cpu_mask_shape_observed_preservation_and_upstream_parity
+availability_reason: null
+capabilities:
+  tasks:
+  - R
+  - O
+  univariate_D1: true
+  multivariate: true
+  counters_native: false
+  irregular_native: false
+  joint_samples: true
+  marginal_quantiles: false
+context:
+  core: 512
+  validated_tiny: 24
+  maximum: null
+normalization: training_channel_mean_std
+local_training: required
+local_cost_seconds: 0.01554029100225307
+external_pretraining: not_applicable
+pretraining_overlap: unknown
+supports_resume: false
+checkpoint_granularity: completed_fit/query_only
+environment: environments/neural.lock.txt
+verified_at: '2026-10-31'
+scientific_benchmark_run: false
+conference_eligible: false
+conference_blocker: exact native training recovery and protocol training-mask integration
+  not validated
+wrapper_source: src/energygap/methods/neural.py
+wrapper_version: 0.1.0
+upstream_wrapper_version: pypots==1.5
+wrapper_repo_commit: 2271533587bab250163437ed39cfe13cefd8b80a
+wrapper_code_license: BSD-3-Clause
+real_integration_pilot: L512_3sites_2epochs_16train_windows_no_convergence_claim

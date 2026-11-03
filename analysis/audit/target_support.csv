@@ -1,0 +1,4 @@
+site,episodes,forecast_available,forecast_unavailable,forecast_unavailable_percent,distinct_reconnection_days
+H1,16170,16081,89,0.5504019789734076,128
+H2,25720,25494,226,0.8786936236391913,204
+I1,26690,26642,48,0.17984263769201947,210

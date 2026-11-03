@@ -1,0 +1,17 @@
+schema_version: 1
+task: R
+context: 512
+nominal_seconds: 300
+alignment_tolerance_seconds: 90
+folds: [[0, 0.4, 0.5, 0.65], [0, 0.55, 0.65, 0.8], [0, 0.7, 0.8, 1.0]]
+train_seeds: [11, 23, 47]
+validation_mask_seeds: [1001, 1002, 1003, 1004, 1005]
+test_mask_seeds: [2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010]
+bootstrap_seed: 20261031
+bootstrap_attempts: 10000
+block_days: 7
+block_sensitivity_days: [2, 14]
+family_size: 12
+alpha: 0.05
+min_seasonal_count: 20
+physical_confirmatory_status: blocked_measurement_semantics

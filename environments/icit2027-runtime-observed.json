@@ -1,0 +1,49 @@
+{
+  "source": "results/conference-20261101T165101Z-1789282/protocol.lock.json",
+  "description": "Observed package subset and GPU runtime from the frozen protocol. This is not a complete pip or conda environment lock.",
+  "python": "3.12.16",
+  "packages": {
+    "huggingface-hub": "0.34.4",
+    "momentfm": "0.1.5",
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "pyarrow": "19.0.1",
+    "pypots": "1.5",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.15.3",
+    "torch": "2.9.1+cu126",
+    "transformers": "4.57.6",
+    "tsicl": "0.2.0"
+  },
+  "torch_runtime": {
+    "arch_list": [
+      "sm_50",
+      "sm_60",
+      "sm_70",
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90"
+    ],
+    "backend": "pytorch",
+    "compute_capability": [
+      7,
+      0
+    ],
+    "cublas_workspace_config": ":4096:8",
+    "cuda_runtime": "12.6",
+    "cudnn_allow_tf32": true,
+    "cudnn_version": 91002,
+    "deterministic_algorithms": false,
+    "device": "cuda:0",
+    "gpu_name": "Tesla V100-PCIE-16GB",
+    "matmul_allow_tf32": false,
+    "precision_policy": "existing_float32_models_float64_ridge_no_automatic_mixed_precision",
+    "torch_version": "2.9.1+cu126",
+    "total_memory_bytes": 16928342016
+  },
+  "initial_threads": 32,
+  "initial_energy_cpu_workers": 8,
+  "initial_energy_cpu_max_pending": 16,
+  "later_session_policy": "Later authorized sessions used 16 energy CPU workers and 32 pending tasks. Full runtime history remains restricted; this initial scientific identity is unchanged."
+}

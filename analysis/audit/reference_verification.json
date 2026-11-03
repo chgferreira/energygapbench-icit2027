@@ -1,0 +1,26 @@
+{
+  "checked_on": "2026-11-03",
+  "policy": "Bibliographic identities retained. Primary proceedings, publisher or author preprint sources checked for the sixteen cited works. Uncited original entries remain in references.bib.",
+  "sources": {
+    "weber2021": "https://publikationen.bibliothek.kit.edu/1000136166/130805381",
+    "silva2026": "https://link.springer.com/chapter/10.1007/978-3-032-09044-7_12",
+    "sartipi2025": "https://orbilu.uni.lu/handle/10993/65520",
+    "du2024": "https://arxiv.org/abs/2406.12747",
+    "toye2025": "https://proceedings.mlr.press/v287/toye25a.html",
+    "du2023": "https://github.com/WenjieDu/SAITS",
+    "goswami2024": "https://proceedings.mlr.press/v235/goswami24a.html",
+    "kunsch1989": "https://people.math.ethz.ch/~hkuensch/papers/",
+    "cao2018": "https://proceedings.neurips.cc/paper_files/paper/2018/hash/734e6bfcd358e25ac1db0a4241b95651-Abstract.html",
+    "tashiro2021": "https://proceedings.neurips.cc/paper/2021/hash/cfe8504bda37b575c70ee1a8276f3486-Abstract.html",
+    "nie2024": "https://doi.org/10.1145/3637528.3671751",
+    "park2026": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/41ff2b921a875902fad0c1840593c19a-Abstract-Conference.html",
+    "fan2026": "https://proceedings.mlr.press/v306/fan26h.html",
+    "seifner2025": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/3d03791377a31cb3e7357014ba58eb80-Abstract-Conference.html",
+    "lenaour2026": "https://openreview.net/forum?id=cTk56KpsP5",
+    "lenaour2026tsicl": "https://arxiv.org/abs/2606.05878"
+  },
+  "notes": {
+    "silva2026": "Publisher citation uses2026 volume16222, first online20October2025. Existing2026reference retained.",
+    "kunsch1989": "Author publication list confirms work; supplied DOI retained. Full publisher page did not render in browser."
+  }
+}

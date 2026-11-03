@@ -1,0 +1,55 @@
+name: SAITS
+scientific_role: consolidated
+paper: https://doi.org/10.1016/j.eswa.2023.119619
+doi_url: https://doi.org/10.1016/j.eswa.2023.119619
+year: 2023
+publication_status: see_primary_source
+repo: https://github.com/WenjieDu/SAITS
+commit: 660b87f19c1277065f314f24134f646229e89ca9
+code_license: MIT
+checkpoint_license: null
+implementation: pypots
+implementation_status: integrated
+validation_status: tiny_cpu_mask_shape_observed_preservation_and_upstream_parity
+availability_reason: null
+capabilities:
+  tasks:
+  - R
+  - O
+  univariate_D1: true
+  multivariate: true
+  counters_native: false
+  irregular_native: false
+  joint_samples: false
+  marginal_quantiles: false
+context:
+  core: 512
+  validated_tiny: 24
+  maximum: null
+normalization: training_channel_mean_std
+local_training: required
+local_cost_seconds: 0.04402216599919484
+external_pretraining: not_applicable
+pretraining_overlap: unknown
+supports_resume: false
+checkpoint_granularity: completed_fit/query_only
+environment: environments/neural.lock.txt
+verified_at: '2026-10-31'
+scientific_benchmark_run: false
+conference_eligible: false
+conference_blocker: exact native training recovery and protocol training-mask integration
+  not validated
+wrapper_source: src/energygap/methods/neural.py
+wrapper_version: 0.1.0
+upstream_wrapper_version: pypots==1.5
+wrapper_repo_commit: 2271533587bab250163437ed39cfe13cefd8b80a
+wrapper_code_license: BSD-3-Clause
+additional_variant:
+  name: saits_protocol_training_loop
+  source: src/energygap/methods/training.py
+  supports_resume: deterministic_cpu_optimizer_step_validated
+  dynamic_mask: balanced_points_blocks
+  scheduler: constant_lr
+  validation_selection: not_yet_integrated_in_conference_runner
+  audit: artifacts/reports/saits_recovery_comparison.json
+real_integration_pilot: L512_3sites_2epochs_16train_windows_no_convergence_claim

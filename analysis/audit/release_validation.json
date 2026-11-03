@@ -1,0 +1,14 @@
+{
+  "analysis_tests": {
+    "passed": 16,
+    "failed": 0
+  },
+  "article_pages_including_references": 6,
+  "author_compact_originals_byte_verified": 49,
+  "original_public_aggregate_exports_byte_verified": 6,
+  "original_engine_python_files_byte_verified": 81,
+  "public_scope": "code_documentation_aggregate_results_only",
+  "manuscript_and_editorial_prompts_in_public_repository": false,
+  "private_records_in_public_repository": false,
+  "scientific_qualification": "Exploratory conditional inference; further physical and external validation pending."
+}

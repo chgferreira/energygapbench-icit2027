@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "scope": "aggregate_only_reproduction",
+  "individual_data_included": false,
+  "episode_bootstrap_resampling_performed": false,
+  "support_flags": "read from archived summaries; calendar geometry is not re-audited here",
+  "reconstruction": {
+    "rows": 96,
+    "maximum_absolute_errors": {
+      "nmae": 5.555556015224283e-13,
+      "mae_kw": 5.5564441936439835e-12,
+      "forecast_nmae": null,
+      "forecast_mae_kw": null
+    }
+  },
+  "energy_controls": {
+    "rows": 6,
+    "maximum_absolute_errors": {
+      "nmae": 0.0,
+      "mae_kw": 0.0,
+      "nmae_original_E": 0.0,
+      "mae_kw_original_E": 0.0,
+      "nmae_P": 0.0,
+      "mae_kw_P": 0.0
+    }
+  },
+  "forecast_intervals_verified": 54,
+  "control_intervals_verified": 18,
+  "script_sha256": "9b62be4baa37a28a45a47e4f027328a840b659cd568b6128884933bea5019159",
+  "inputs_sha256": {
+    "analysis/energy_controls/statistics/control_bootstrap_draws.npz": "12f14583ab5c4728cb21835a61151a1e3056aa8045baaac0f2b1c4a4808b04c4",
+    "analysis/energy_controls/statistics/control_contrasts.json": "5dac588eafcab7068e4cdd058d2cefd3fa9dff7515809c289209af3a8a64e990",
+    "analysis/energy_controls/statistics/control_draws_schema.json": "3f9da59950838adae04c08997190a241595b72471070e8e4db781e5408751596",
+    "analysis/forecast_v2/outputs/bootstrap_draws_schema.json": "7edc1faac47af70f3153c999cd20551c9b32067793f600cb0236acf69ac7b1a8",
+    "analysis/forecast_v2/outputs/forecast_bootstrap_draws.npz": "4ad3222dbca9ce79b7d38eece6c4070c7e6c1add0169638b39468479b2fdd41e",
+    "analysis/forecast_v2/outputs/forecast_contrasts.json": "c2684609bfa6786923e5764e91e7e61eb29fc568e877590af31e504b82dd00a3",
+    "analysis/outputs/energy_control_summary/control_by_fold_duration.csv": "8d7d425b6e7f8590819f4762a55c009d4102385f122d36c4a966d182afbfbde8",
+    "analysis/outputs/energy_control_summary/control_summary.csv": "6ec6edddb153416ce456d0e7a28dd0f1782cd35a5e81c26ca8a8fe049d881262",
+    "analysis/outputs/reconstruction_all_methods_all_hypotheses.csv": "b1860a8a9de6462632ef59e2215e901a931a7ffc534af545e0d305ab23a1c487",
+    "analysis/outputs/reconstruction_cells.csv": "947dca6aac01f26aee4fb1b042f067e689b182fd448929410fdd202f2e456d0b",
+    "analysis/outputs/selected_policy_by_duration.csv": "3ae67d97c747e65f9188632c8194b962d74fd2a0422456ef6171e84850050e0f",
+    "results/conference-20261101T165101Z-1789282/reports/contrasts.json": "4a8b685b26a8567d6d22b1a498389e243fc897e0c800f401a4a2df1ba0efe285"
+  }
+}

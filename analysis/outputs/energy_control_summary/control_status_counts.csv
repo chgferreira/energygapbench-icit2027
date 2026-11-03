@@ -1,0 +1,15 @@
+site,policy,status,reason,episodes
+H1,uniform_shift_no_deadzone,success,bounded_scalar_reconciliation,16147
+H1,uniform_shift_no_deadzone,success,identity,23
+H1,uniform_shift_tolerant,success,bounded_scalar_reconciliation,2796
+H1,uniform_shift_tolerant,success,identity,96
+H1,uniform_shift_tolerant,success,within_directional_tolerance,13278
+H2,uniform_shift_no_deadzone,success,bounded_scalar_reconciliation,25713
+H2,uniform_shift_no_deadzone,success,identity,7
+H2,uniform_shift_tolerant,success,bounded_scalar_reconciliation,7111
+H2,uniform_shift_tolerant,success,identity,170
+H2,uniform_shift_tolerant,success,within_directional_tolerance,18439
+I1,uniform_shift_no_deadzone,success,bounded_scalar_reconciliation,12602
+I1,uniform_shift_no_deadzone,success,within_directional_tolerance,14088
+I1,uniform_shift_tolerant,success,bounded_scalar_reconciliation,3700
+I1,uniform_shift_tolerant,success,within_directional_tolerance,22990

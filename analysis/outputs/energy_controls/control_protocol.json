@@ -1,0 +1,81 @@
+{
+  "analysis_kind": "post_hoc_exploratory_same_information_control",
+  "comparator": "archived_linear_E_instantaneous_episode_losses",
+  "conditions": [
+    "C3",
+    "C4",
+    "C5"
+  ],
+  "correction_family": "constant_displacement_inside_gap_fixed_boundaries",
+  "direction_admission": "same_as_original_positive_train_tau_and_admissible_counter",
+  "folds": [
+    1,
+    2,
+    3
+  ],
+  "gamma": 0,
+  "helpers_sha256": "53d9d73d33738ba89ff0b99288a980c8d5a0cebedcd3b9641e86897a6b23fa29",
+  "inferential_claims": false,
+  "inputs_sha256": {
+    "episode_losses.parquet": "fa698c373d336f485c722dcbe63cf2464d7062fbc3ec3ea51549c2a742d67894",
+    "protocol.lock.json": "3939cd8f9c82558673fa86e59970c11c7d1c41c75c488381dd9602d547619cb0"
+  },
+  "limitations": [
+    "Analysis was designed after the original results were available; it is not preregistered.",
+    "Restricted displacement and gamma=0 differ from the original flexible correction; this is not an isolated component ablation.",
+    "The two new policies isolate the deadzone within the scalar family, conditional on separately validation-selected parameters.",
+    "The original E trajectories and original selected parameters are absent; archived E losses are compared without inventing them.",
+    "No neural retraining, forecasting replay, metrological confirmation, new sites, or confirmatory hypothesis test is performed."
+  ],
+  "operator": "instantaneous_directional_piecewise_linear_exact_zero_crossings",
+  "parameter_grid": [
+    {
+      "lambda_energy": 0.0,
+      "tau_multiplier": 1.0
+    },
+    {
+      "lambda_energy": 0.0,
+      "tau_multiplier": 2.0
+    },
+    {
+      "lambda_energy": 0.1,
+      "tau_multiplier": 1.0
+    },
+    {
+      "lambda_energy": 0.1,
+      "tau_multiplier": 2.0
+    },
+    {
+      "lambda_energy": 1.0,
+      "tau_multiplier": 1.0
+    },
+    {
+      "lambda_energy": 1.0,
+      "tau_multiplier": 2.0
+    },
+    {
+      "lambda_energy": 10.0,
+      "tau_multiplier": 1.0
+    },
+    {
+      "lambda_energy": 10.0,
+      "tau_multiplier": 2.0
+    }
+  ],
+  "policies": [
+    "uniform_shift_tolerant",
+    "uniform_shift_no_deadzone"
+  ],
+  "reproduction_gate": "all_linear_P_validation_and_test_episode_losses_match",
+  "run_id": "conference-20261101T165101Z-1789282",
+  "script_sha256": "4dcfa2bbcd2d728a5e2df47ab12b1c143d497adf431588cb4c608a4eee4c6859",
+  "seed_loss_note": "linear_is_deterministic_one_evaluation_per_episode",
+  "selection": "validation_equal_duration_episode_nmae_then_fixed_grid_index",
+  "sites": [
+    "H1",
+    "H2",
+    "I1"
+  ],
+  "source_sha256": "7222dd64095b1eeab5bc31022be86fccd6ff6e36ae2a5ceda5ee958b3fdaa880",
+  "test_policy": "all_original_episodes_once_after_validation_selection"
+}

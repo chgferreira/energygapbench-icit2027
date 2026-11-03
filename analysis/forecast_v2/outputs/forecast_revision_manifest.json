@@ -1,0 +1,32 @@
+{
+  "analysis_revision": "forecast-common-target-v2",
+  "inputs_sha256": {
+    "calendar_provenance.json": "8d39358240445e5a22857d5e46f22506ea570dc596c53fd62fa640d67a5f15a4",
+    "protocol.lock.json": "3939cd8f9c82558673fa86e59970c11c7d1c41c75c488381dd9602d547619cb0",
+    "protocol.lock.sha256": "a0f13987045631c14c21aa522f7ed3b0f8bbc1cc5d7ed900acf734252b6b9608",
+    "reports/contrasts.json": "4a8b685b26a8567d6d22b1a498389e243fc897e0c800f401a4a2df1ba0efe285",
+    "reports/contrasts_block_sensitivity.json": "53debd256b9fba72c108bef573901766524927e7bb30e13520df233187bc6c6c",
+    "reports/episode_losses.parquet": "fa698c373d336f485c722dcbe63cf2464d7062fbc3ec3ea51549c2a742d67894",
+    "reports/selected_baseline_validation.csv": "8b5c8bb8c45a7d214c772a26255937a901ddebb5f4227373bfd8939abf9b214d"
+  },
+  "numpy_version": "2.5.4",
+  "outputs_sha256": {
+    "bootstrap_draws_schema.json": "7edc1faac47af70f3153c999cd20551c9b32067793f600cb0236acf69ac7b1a8",
+    "forecast_all_method_cells.csv": "6583b647a32374001cdbba8fa87d78efb34dd81b9287ad85b756e49051e2f436",
+    "forecast_all_methods.csv": "0d064712509e82a314bceb5774c4b7fe6224e998857d06a23929af24c49d4225",
+    "forecast_bootstrap_draws.npz": "4ad3222dbca9ce79b7d38eece6c4070c7e6c1add0169638b39468479b2fdd41e",
+    "forecast_contrasts.csv": "458ffa074f572617aaec1f9e394f7b1959e2d81d492786622660633a9df60c17",
+    "forecast_contrasts.json": "c2684609bfa6786923e5764e91e7e61eb29fc568e877590af31e504b82dd00a3",
+    "forecast_revision_summary.json": "6a3e7c22f3699c9993c929983441d4be508a97ebf2a1af4493fb5dd42cb46858",
+    "forecast_selected_policies.csv": "86fa1e9fb7ebfdd5bdf0d6391c86ebcae254bee357d78e61a61f8296ec67ea5d",
+    "forecast_table.tex": "699d391e2aed2d4dc06f2a279c4ef59971fbef8e4782afd5252a100400d45e03",
+    "forecast_target_membership.parquet": "927ad666c9ad37456978bfb0b27de4dd6112f6918be3a27bd2535530729abf10",
+    "forecast_target_support.csv": "79984680aa7cf71c221c83a36076ef0060ed7c310406f9b540f94b7ae15649ce",
+    "full_test_calendars.csv": "13634f89917ba46b56b59e40d73459cc343f49350a71bf834c77710dc5b2e10b",
+    "reconstruction_interval_replay.csv": "31b778c9c3102002af8506578b6183e8c205bc2eb84c15f5c500fb9411676d0d"
+  },
+  "pandas_version": "3.1.0",
+  "python_version": "3.12.14",
+  "scientific_fingerprint": "81208d1159a0f0c0755ff2b27cbf8e58e325d3b8b494ee6da6ecb7949e852603",
+  "script_sha256": "6f8078195763c09437477ab58dbed3c613cfe9ef87ef2de7864684db69456514"
+}

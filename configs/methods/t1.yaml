@@ -1,0 +1,41 @@
+name: T1
+scientific_role: multivariate_dependencies
+paper: https://proceedings.iclr.cc/paper_files/paper/2026/hash/41ff2b921a875902fad0c1840593c19a-Abstract-Conference.html
+doi_url: https://proceedings.iclr.cc/paper_files/paper/2026/hash/41ff2b921a875902fad0c1840593c19a-Abstract-Conference.html
+year: 2026
+publication_status: see_primary_source
+repo: https://github.com/Oppenheimerdinger/T1
+commit: 823b76aab57a2e60eb5029caab06fdfec8b19256
+code_license: MIT
+checkpoint_license: null
+implementation: pinned_official_model_protocol_training_loop
+implementation_status: integrated
+validation_status: D1_L512_native_parity_tiny_overfit_and_fitted_reload
+availability_reason: null
+capabilities:
+  tasks:
+  - R
+  - O
+  univariate_D1: true
+  multivariate: true
+  counters_native: false
+  irregular_native: false
+  joint_samples: false
+  marginal_quantiles: false
+context:
+  core: 512
+  validated_tiny: 512
+  maximum: null
+normalization: training_channel_scaler_plus_upstream_mask_aware_window
+local_training: required
+local_cost_seconds: null
+external_pretraining: unknown
+pretraining_overlap: unknown
+supports_resume: false
+checkpoint_granularity: completed_fit_and_query
+environment: environments/neural.lock.txt
+verified_at: '2026-10-31'
+scientific_benchmark_run: false
+conference_eligible: false
+conference_blocker: full training schedule/optimizer-step recovery/protocol HPO not
+  validated

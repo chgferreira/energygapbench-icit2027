@@ -1,0 +1,42 @@
+name: CBiT
+scientific_role: compressed_history
+paper: https://proceedings.mlr.press/v306/fan26h.html
+doi_url: https://proceedings.mlr.press/v306/fan26h.html
+year: 2026
+publication_status: see_primary_source
+repo: null
+commit: null
+code_license: null
+checkpoint_license: null
+implementation: not_reproduced
+implementation_status: unavailable
+validation_status: not_validated
+availability_reason: Paper landing page confirms ICML2026 and compressed-history method;
+  no usable author-linked implementation verified, no own_reimplementation claimed.
+capabilities:
+  tasks:
+  - R
+  - O
+  univariate_D1: not_audited
+  multivariate: true
+  counters_native: false
+  irregular_native: false
+  joint_samples: false
+  marginal_quantiles: false
+context:
+  core: 512
+  validated_tiny: null
+  maximum: null
+normalization: not_audited
+local_training: unknown_not_reproduced
+local_cost_seconds: null
+external_pretraining: unknown
+pretraining_overlap: unknown
+supports_resume: false
+checkpoint_granularity: not_reproduced
+environment: separate_optional_environment
+verified_at: '2026-10-31'
+scientific_benchmark_run: false
+conference_eligible: false
+conference_blocker: Paper landing page confirms ICML2026 and compressed-history method;
+  no usable author-linked implementation verified, no own_reimplementation claimed.

@@ -1,0 +1,6 @@
+C1: {geometry: points, mechanism: MCAR, rate: 0.05}
+C2: {geometry: points, mechanism: MCAR, rate: 0.20}
+C3: {geometry: blocks, mechanism: MCAR, hidden_minutes: 15, rate: 0.10}
+C4: {geometry: blocks, mechanism: MCAR, hidden_minutes: 60, rate: 0.10}
+C5: {geometry: blocks, mechanism: MCAR, hidden_minutes: 180, rate: 0.10}
+C6: {geometry: replay, mechanism: train_fitted, sparse_fallback: marginal_duration}

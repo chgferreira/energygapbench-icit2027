@@ -1,0 +1,2108 @@
+[
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 7,
+    "ci95": [
+      0.0020643059307607803,
+      0.003483752531443247
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 130,
+      "180": 130,
+      "60": 130
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.0030024400318757584,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "instantaneous",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "H1",
+    "support_blocks": 17,
+    "support_blocks_by_fold": {
+      "1": 5,
+      "2": 5,
+      "3": 7
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 7,
+    "ci95": [
+      -0.007800236835653731,
+      -0.0037312627638395103
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 130,
+      "180": 130,
+      "60": 130
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": -0.006025972525298685,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "instantaneous",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "H1",
+    "support_blocks": 17,
+    "support_blocks_by_fold": {
+      "1": 5,
+      "2": 5,
+      "3": 7
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 7,
+    "ci95": [
+      0.001989129088600109,
+      0.0030583666605010595
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 130,
+      "180": 130,
+      "60": 130
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.0026526029212382515,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_start",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "H1",
+    "support_blocks": 17,
+    "support_blocks_by_fold": {
+      "1": 5,
+      "2": 5,
+      "3": 7
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 7,
+    "ci95": [
+      -0.00867740776387307,
+      -0.004419313960193112
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 130,
+      "180": 130,
+      "60": 130
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": -0.006883584141983474,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_start",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "H1",
+    "support_blocks": 17,
+    "support_blocks_by_fold": {
+      "1": 5,
+      "2": 5,
+      "3": 7
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 7,
+    "ci95": [
+      0.0015378032567164698,
+      0.0024161520690508284
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 130,
+      "180": 130,
+      "60": 130
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.002127076288496159,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_end",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "H1",
+    "support_blocks": 17,
+    "support_blocks_by_fold": {
+      "1": 5,
+      "2": 5,
+      "3": 7
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 7,
+    "ci95": [
+      -0.0090330124714493,
+      -0.004664357858634237
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 130,
+      "180": 130,
+      "60": 130
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": -0.00712888559013888,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_end",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "H1",
+    "support_blocks": 17,
+    "support_blocks_by_fold": {
+      "1": 5,
+      "2": 5,
+      "3": 7
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 2,
+    "ci95": [
+      0.0020855534032036844,
+      0.0037890630747222584
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 130,
+      "180": 130,
+      "60": 130
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.0030024400318757584,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "instantaneous",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 9.999000099990002e-05,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "H1",
+    "support_blocks": 64,
+    "support_blocks_by_fold": {
+      "1": 19,
+      "2": 19,
+      "3": 26
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 2,
+    "ci95": [
+      -0.007708875606479931,
+      -0.004156070046613909
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 130,
+      "180": 130,
+      "60": 130
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": -0.006025972525298685,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "instantaneous",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 9.999000099990002e-05,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "H1",
+    "support_blocks": 64,
+    "support_blocks_by_fold": {
+      "1": 19,
+      "2": 19,
+      "3": 26
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 2,
+    "ci95": [
+      0.0019977591396267897,
+      0.0032180220446018236
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 130,
+      "180": 130,
+      "60": 130
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.0026526029212382515,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_start",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 9.999000099990002e-05,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "H1",
+    "support_blocks": 64,
+    "support_blocks_by_fold": {
+      "1": 19,
+      "2": 19,
+      "3": 26
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 2,
+    "ci95": [
+      -0.008572010560091593,
+      -0.004954841624202484
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 130,
+      "180": 130,
+      "60": 130
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": -0.006883584141983474,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_start",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 9.999000099990002e-05,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "H1",
+    "support_blocks": 64,
+    "support_blocks_by_fold": {
+      "1": 19,
+      "2": 19,
+      "3": 26
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 2,
+    "ci95": [
+      0.0015130161675330918,
+      0.002639855561538963
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 130,
+      "180": 130,
+      "60": 130
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.002127076288496159,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_end",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 9.999000099990002e-05,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "H1",
+    "support_blocks": 64,
+    "support_blocks_by_fold": {
+      "1": 19,
+      "2": 19,
+      "3": 26
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 2,
+    "ci95": [
+      -0.00885768785708502,
+      -0.00520322352688956
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 130,
+      "180": 130,
+      "60": 130
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": -0.00712888559013888,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_end",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 9.999000099990002e-05,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "H1",
+    "support_blocks": 64,
+    "support_blocks_by_fold": {
+      "1": 19,
+      "2": 19,
+      "3": 26
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 14,
+    "ci95": [
+      0.002216254083078207,
+      0.0033180840865954784
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 130,
+      "180": 130,
+      "60": 130
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.0030024400318757584,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "instantaneous",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "H1",
+    "support_blocks": 7,
+    "support_blocks_by_fold": {
+      "1": 2,
+      "2": 2,
+      "3": 3
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 14,
+    "ci95": [
+      -0.008108375920576717,
+      -0.00416535365370178
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 130,
+      "180": 130,
+      "60": 130
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": -0.006025972525298685,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "instantaneous",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "H1",
+    "support_blocks": 7,
+    "support_blocks_by_fold": {
+      "1": 2,
+      "2": 2,
+      "3": 3
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 14,
+    "ci95": [
+      0.001964865175915152,
+      0.002927013006625615
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 130,
+      "180": 130,
+      "60": 130
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.0026526029212382515,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_start",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "H1",
+    "support_blocks": 7,
+    "support_blocks_by_fold": {
+      "1": 2,
+      "2": 2,
+      "3": 3
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 14,
+    "ci95": [
+      -0.008905433953792084,
+      -0.004784987511125553
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 130,
+      "180": 130,
+      "60": 130
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": -0.006883584141983474,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_start",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "H1",
+    "support_blocks": 7,
+    "support_blocks_by_fold": {
+      "1": 2,
+      "2": 2,
+      "3": 3
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 14,
+    "ci95": [
+      0.00157644144894659,
+      0.00220763516317964
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 130,
+      "180": 130,
+      "60": 130
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.002127076288496159,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_end",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "H1",
+    "support_blocks": 7,
+    "support_blocks_by_fold": {
+      "1": 2,
+      "2": 2,
+      "3": 3
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 14,
+    "ci95": [
+      -0.009356342229285384,
+      -0.004981137992917247
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 130,
+      "180": 130,
+      "60": 130
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": -0.00712888559013888,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_end",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "H1",
+    "support_blocks": 7,
+    "support_blocks_by_fold": {
+      "1": 2,
+      "2": 2,
+      "3": 3
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 7,
+    "ci95": [
+      -0.0012402414870546791,
+      0.0014052806244732427
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 205,
+      "180": 205,
+      "60": 205
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.00043631780483570424,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "instantaneous",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 0.5703429657034297,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "H2",
+    "support_blocks": 28,
+    "support_blocks_by_fold": {
+      "1": 9,
+      "2": 8,
+      "3": 11
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 7,
+    "ci95": [
+      -0.0012590918802985267,
+      -7.393725370853478e-05
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 205,
+      "180": 205,
+      "60": 205
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": -0.0007434482818630425,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "instantaneous",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 0.017698230176982303,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "H2",
+    "support_blocks": 28,
+    "support_blocks_by_fold": {
+      "1": 9,
+      "2": 8,
+      "3": 11
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 7,
+    "ci95": [
+      -0.0002816892167001227,
+      0.0020400304314706122
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 205,
+      "180": 205,
+      "60": 205
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.0011471106135266841,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_start",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 0.07749225077492251,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "H2",
+    "support_blocks": 28,
+    "support_blocks_by_fold": {
+      "1": 9,
+      "2": 8,
+      "3": 11
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 7,
+    "ci95": [
+      -0.0016099529211521244,
+      -0.0002411725456570522
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 205,
+      "180": 205,
+      "60": 205
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": -0.0009906904339272563,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_start",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 0.005599440055994401,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "H2",
+    "support_blocks": 28,
+    "support_blocks_by_fold": {
+      "1": 9,
+      "2": 8,
+      "3": 11
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 7,
+    "ci95": [
+      -0.0005050398935201765,
+      0.0018964895336061843
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 205,
+      "180": 205,
+      "60": 205
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.0009872404603973827,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_end",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 0.15408459154084592,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "H2",
+    "support_blocks": 28,
+    "support_blocks_by_fold": {
+      "1": 9,
+      "2": 8,
+      "3": 11
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 7,
+    "ci95": [
+      -0.0014718262712258437,
+      -9.933149887057715e-05
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 205,
+      "180": 205,
+      "60": 205
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": -0.0008517106339233437,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_end",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 0.0182981701829817,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "H2",
+    "support_blocks": 28,
+    "support_blocks_by_fold": {
+      "1": 9,
+      "2": 8,
+      "3": 11
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 2,
+    "ci95": [
+      -0.0008298812724016353,
+      0.0016593474891988251
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 205,
+      "180": 205,
+      "60": 205
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.00043631780483570424,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "instantaneous",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 0.5038496150384961,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "H2",
+    "support_blocks": 103,
+    "support_blocks_by_fold": {
+      "1": 31,
+      "2": 31,
+      "3": 41
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 2,
+    "ci95": [
+      -0.0013567739644768922,
+      -6.327393845912737e-05
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 205,
+      "180": 205,
+      "60": 205
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": -0.0007434482818630425,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "instantaneous",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 0.027297270272972702,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "H2",
+    "support_blocks": 103,
+    "support_blocks_by_fold": {
+      "1": 31,
+      "2": 31,
+      "3": 41
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 2,
+    "ci95": [
+      1.7981665793903214e-05,
+      0.002249346926641218
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 205,
+      "180": 205,
+      "60": 205
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.0011471106135266841,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_start",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 0.043995600439956005,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "H2",
+    "support_blocks": 103,
+    "support_blocks_by_fold": {
+      "1": 31,
+      "2": 31,
+      "3": 41
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 2,
+    "ci95": [
+      -0.0017503398843648,
+      -0.0001341353555827777
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 205,
+      "180": 205,
+      "60": 205
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": -0.0009906904339272563,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_start",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 0.0165983401659834,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "H2",
+    "support_blocks": 103,
+    "support_blocks_by_fold": {
+      "1": 31,
+      "2": 31,
+      "3": 41
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 2,
+    "ci95": [
+      -0.00015355902925333846,
+      0.002109115927817552
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 205,
+      "180": 205,
+      "60": 205
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.0009872404603973827,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_end",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 0.08769123087691232,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "H2",
+    "support_blocks": 103,
+    "support_blocks_by_fold": {
+      "1": 31,
+      "2": 31,
+      "3": 41
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 2,
+    "ci95": [
+      -0.0015999631118804366,
+      -9.399482772287437e-06
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 205,
+      "180": 205,
+      "60": 205
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": -0.0008517106339233437,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_end",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 0.036196380361963806,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "H2",
+    "support_blocks": 103,
+    "support_blocks_by_fold": {
+      "1": 31,
+      "2": 31,
+      "3": 41
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 14,
+    "ci95": [
+      -0.001311083113984538,
+      0.0011593929865817462
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 205,
+      "180": 205,
+      "60": 205
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.00043631780483570424,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "instantaneous",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "H2",
+    "support_blocks": 13,
+    "support_blocks_by_fold": {
+      "1": 4,
+      "2": 4,
+      "3": 5
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 14,
+    "ci95": [
+      -0.0013447904405619214,
+      -3.1279532935463716e-06
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 205,
+      "180": 205,
+      "60": 205
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": -0.0007434482818630425,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "instantaneous",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "H2",
+    "support_blocks": 13,
+    "support_blocks_by_fold": {
+      "1": 4,
+      "2": 4,
+      "3": 5
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 14,
+    "ci95": [
+      -0.0002803271274771173,
+      0.0018228998395654764
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 205,
+      "180": 205,
+      "60": 205
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.0011471106135266841,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_start",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "H2",
+    "support_blocks": 13,
+    "support_blocks_by_fold": {
+      "1": 4,
+      "2": 4,
+      "3": 5
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 14,
+    "ci95": [
+      -0.0017051989553915953,
+      -0.00018422490460981962
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 205,
+      "180": 205,
+      "60": 205
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": -0.0009906904339272563,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_start",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "H2",
+    "support_blocks": 13,
+    "support_blocks_by_fold": {
+      "1": 4,
+      "2": 4,
+      "3": 5
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 14,
+    "ci95": [
+      -0.0005304117839616558,
+      0.0016925440751625507
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 205,
+      "180": 205,
+      "60": 205
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.0009872404603973827,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_end",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "H2",
+    "support_blocks": 13,
+    "support_blocks_by_fold": {
+      "1": 4,
+      "2": 4,
+      "3": 5
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 14,
+    "ci95": [
+      -0.0015931604815747839,
+      -7.46571616606918e-06
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 205,
+      "180": 205,
+      "60": 205
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": -0.0008517106339233437,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_end",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "H2",
+    "support_blocks": 13,
+    "support_blocks_by_fold": {
+      "1": 4,
+      "2": 4,
+      "3": 5
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 7,
+    "ci95": [
+      -0.015900318464044348,
+      -0.0029846258455114728
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 212,
+      "180": 212,
+      "60": 212
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": -0.009009607760479177,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "instantaneous",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 0.005499450054994501,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "I1",
+    "support_blocks": 30,
+    "support_blocks_by_fold": {
+      "1": 9,
+      "2": 9,
+      "3": 12
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 7,
+    "ci95": [
+      -0.0013946668659251347,
+      0.004411164008837937
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 212,
+      "180": 212,
+      "60": 212
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.0015682948664358905,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "instantaneous",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 0.3243675632436756,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "I1",
+    "support_blocks": 30,
+    "support_blocks_by_fold": {
+      "1": 9,
+      "2": 9,
+      "3": 12
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 7,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 212,
+      "180": 212,
+      "60": 212
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.0,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_start",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 1.0,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "I1",
+    "support_blocks": 30,
+    "support_blocks_by_fold": {
+      "1": 9,
+      "2": 9,
+      "3": 12
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 7,
+    "ci95": [
+      0.0013154727061404615,
+      0.019879732525258542
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 212,
+      "180": 212,
+      "60": 212
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.01022805935129337,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_start",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 0.027197280271972803,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "I1",
+    "support_blocks": 30,
+    "support_blocks_by_fold": {
+      "1": 9,
+      "2": 9,
+      "3": 12
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 7,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 212,
+      "180": 212,
+      "60": 212
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.0,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_end",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 1.0,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "I1",
+    "support_blocks": 30,
+    "support_blocks_by_fold": {
+      "1": 9,
+      "2": 9,
+      "3": 12
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 7,
+    "ci95": [
+      0.0013154727061404615,
+      0.019879732525258542
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 212,
+      "180": 212,
+      "60": 212
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.01022805935129337,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_end",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 0.027197280271972803,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "I1",
+    "support_blocks": 30,
+    "support_blocks_by_fold": {
+      "1": 9,
+      "2": 9,
+      "3": 12
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 2,
+    "ci95": [
+      -0.013612787333861717,
+      -0.004707736972517884
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 212,
+      "180": 212,
+      "60": 212
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": -0.009009607760479177,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "instantaneous",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 0.00039996000399960006,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "I1",
+    "support_blocks": 106,
+    "support_blocks_by_fold": {
+      "1": 32,
+      "2": 32,
+      "3": 42
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 2,
+    "ci95": [
+      -0.0005456539852813143,
+      0.0037355020258286967
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 212,
+      "180": 212,
+      "60": 212
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.0015682948664358905,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "instantaneous",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 0.14858514148585142,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "I1",
+    "support_blocks": 106,
+    "support_blocks_by_fold": {
+      "1": 32,
+      "2": 32,
+      "3": 42
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 2,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 212,
+      "180": 212,
+      "60": 212
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.0,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_start",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 1.0,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "I1",
+    "support_blocks": 106,
+    "support_blocks_by_fold": {
+      "1": 32,
+      "2": 32,
+      "3": 42
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 2,
+    "ci95": [
+      0.004112670793714455,
+      0.016688144107322146
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 212,
+      "180": 212,
+      "60": 212
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.01022805935129337,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_start",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 0.0024997500249975004,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "I1",
+    "support_blocks": 106,
+    "support_blocks_by_fold": {
+      "1": 32,
+      "2": 32,
+      "3": 42
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 2,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 212,
+      "180": 212,
+      "60": 212
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.0,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_end",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 1.0,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "I1",
+    "support_blocks": 106,
+    "support_blocks_by_fold": {
+      "1": 32,
+      "2": 32,
+      "3": 42
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 2,
+    "ci95": [
+      0.004112670793714455,
+      0.016688144107322146
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 212,
+      "180": 212,
+      "60": 212
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.01022805935129337,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_end",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": 0.0024997500249975004,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics",
+    "seed": 20261031,
+    "site": "I1",
+    "support_blocks": 106,
+    "support_blocks_by_fold": {
+      "1": 32,
+      "2": 32,
+      "3": 42
+    },
+    "temporal_support_sufficient": true,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 14,
+    "ci95": [
+      -0.0167540451946832,
+      -0.002313083709085884
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 212,
+      "180": 212,
+      "60": 212
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": -0.009009607760479177,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "instantaneous",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "I1",
+    "support_blocks": 14,
+    "support_blocks_by_fold": {
+      "1": 4,
+      "2": 4,
+      "3": 6
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 14,
+    "ci95": [
+      -0.0019543427328170336,
+      0.004708975206129414
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 212,
+      "180": 212,
+      "60": 212
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.0015682948664358905,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "instantaneous",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "I1",
+    "support_blocks": 14,
+    "support_blocks_by_fold": {
+      "1": 4,
+      "2": 4,
+      "3": 6
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 14,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 212,
+      "180": 212,
+      "60": 212
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.0,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_start",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "I1",
+    "support_blocks": 14,
+    "support_blocks_by_fold": {
+      "1": 4,
+      "2": 4,
+      "3": 6
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 14,
+    "ci95": [
+      7.641707852447476e-05,
+      0.021080424876350524
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 212,
+      "180": 212,
+      "60": 212
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.01022805935129337,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_start",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "I1",
+    "support_blocks": 14,
+    "support_blocks_by_fold": {
+      "1": 4,
+      "2": 4,
+      "3": 6
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 14,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_energy_gain",
+    "duration_days": {
+      "15": 212,
+      "180": 212,
+      "60": 212
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.0,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_end",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "I1",
+    "support_blocks": 14,
+    "support_blocks_by_fold": {
+      "1": 4,
+      "2": 4,
+      "3": 6
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  },
+  {
+    "analysis_revision": "forecast-common-target-v2",
+    "attempted": 10000,
+    "block_days": 14,
+    "ci95": [
+      7.641707852447476e-05,
+      0.021080424876350524
+    ],
+    "confirmatory": false,
+    "contrast": "contrast_complexity_gain",
+    "duration_days": {
+      "15": 212,
+      "180": 212,
+      "60": 212
+    },
+    "endpoint": "forecast_nmae_1h_common_observed_target",
+    "estimate": 0.01022805935129337,
+    "familywise_or_fdr_control_claimed": false,
+    "hypothesis": "interval_mean_end",
+    "interval_kind": "pointwise_exploratory_conditional_available_target",
+    "invalid": 0,
+    "multiplicity_control": "none",
+    "p_exploratory": null,
+    "p_exploratory_adjusted": false,
+    "p_holm": null,
+    "p_raw": null,
+    "physical_confirmatory": false,
+    "reason": "Conditional on observed one-hour targets and fitted models; unconfirmed physical measurement semantics; insufficient temporal support or invalid bootstrap draws",
+    "seed": 20261031,
+    "site": "I1",
+    "support_blocks": 14,
+    "support_blocks_by_fold": {
+      "1": 4,
+      "2": 4,
+      "3": 6
+    },
+    "temporal_support_sufficient": false,
+    "valid": 10000
+  }
+]

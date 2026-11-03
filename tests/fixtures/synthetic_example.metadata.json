@@ -1,0 +1,13 @@
+{
+  "synthetic": true,
+  "site_id": "SYNTH_EXAMPLE",
+  "generator": "energygap.data.fixture.make_fixture",
+  "days": 2,
+  "step_minutes": 5,
+  "seed": 7,
+  "real_telemetry": false,
+  "power_semantics": "synthetic instantaneous piecewise-linear samples",
+  "counter_resolution_kWh": 0.001,
+  "license": "MIT",
+  "purpose": "readable example; main smoke generates 35 days dynamically"
+}

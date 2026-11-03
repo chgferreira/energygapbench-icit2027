@@ -1,0 +1,41 @@
+{
+  "paper_page_limit_including_references": 6,
+  "paper_pages": 6,
+  "template": "Author-supplied IEEEtran conference, standard 10 pt, unchanged margins",
+  "visual_review": "All six revised pages visually reviewed. No overlap or clipping detected. IEEEtran body remains 10 pt with unchanged margins. Embedded fonts, no Type 3.",
+  "numerical_validation": "864 main-table rows,96 site aggregates,36 original point-estimate entries includingNA; maximum reconstruction absolute discrepancy<5e-16.",
+  "analysis_byte_replay": {
+    "identical_generated_files": 29,
+    "different_files": 0,
+    "scope": "Clean-directory replay of both analysis scripts, including deterministic figures and all manifests"
+  },
+  "software_tests": {
+    "passed": 489,
+    "skipped": 14,
+    "warnings": 7,
+    "seconds": 92.77,
+    "scope": "Full existing source test suite in local CPU environment. Skip reasons include actual CUDA hardware, upstream model prerequisites, historical private-data artifacts.",
+    "revision_note": "Previously completed full suite; experiment engine unchanged in this editorial/analysis revision. Both analysis scripts replayed from clean outputs."
+  },
+  "source_identity": "81 Python files unchanged from final reporting continuation target7222dd64095b1eeab5bc31022be86fccd6ff6e36ae2a5ceda5ee958b3fdaa880",
+  "original_result_files": "49 transferred compact-evidence files retained byte-identically. Original directory entries are not counted.",
+  "scientific_status": "Work in progress; physical semantics unconfirmed, primary forecast contrasts unavailable, separate post-hoc observed-target supplement. Missing full ledger and correction diagnostics documented.",
+  "public_release_performed": false,
+  "commit_performed": false,
+  "latex_notes": [
+    "Final compilation has six pages, no undefined references and no overfull boxes. Final page visually rechecked after minor prose tightening."
+  ],
+  "git_initialized_locally": true,
+  "revision": "Stronger contribution framing, engineering interpretation, physical-unit error reductions and prospective joint policy selection",
+  "descriptive_supplement": {
+    "lower_corrected_linear_nmae_cells": 27,
+    "total_site_fold_duration_cells": 27,
+    "relative_nmae_reduction_range_percent": [
+      9.656758,
+      26.473466
+    ],
+    "independent_tests": false,
+    "primary_comparator_unchanged": true,
+    "new_training": false
+  }
+}

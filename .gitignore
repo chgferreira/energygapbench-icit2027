@@ -1,0 +1,67 @@
+# Local Python/runtime state
+.venv/
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+
+# Private inputs, mutable execution state and model artifacts
+raw_data/**
+!raw_data/.gitkeep
+datasets/
+data/interim/**
+data/processed/**
+data/evaluation_truth/**
+data/splits/**
+data/masks/**
+runs/
+artifacts/
+*.ckpt
+*.pt
+*.pth
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+# Credentials and machine-local settings
+.env*
+secrets*
+.aws/
+
+# Build archives and disposable previews
+dist/
+tmp/
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+
+# Internal drafting notes and editorial prompts are not publication artifacts.
+editorial/
+analysis/editorial/
+*_revision_prompt*
+*_editorial_prompt*
+
+# Public distribution is limited to code, documentation and aggregates.
+manuscript/
+article/
+restricted_analysis/
+analysis/public_outputs/
+*.tex
+*.text
+*.bib
+*.cls
+*.sty
+analysis/**/*.parquet
+results/**/*.parquet
+**/protocol.lock.json
+**/protocol.lock.sha256
+**/runtime_history/
+**/forecast_target_membership*
+**/full_test_calendars.csv
+**/calendar_provenance.json

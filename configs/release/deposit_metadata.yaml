@@ -1,0 +1,52 @@
+schema_version: 1
+status: local_publication_candidate_not_deposited
+title: 'EnergyGapBench: Energy-Informed Recovery of Power Telemetry After Communication Gaps'
+resource_type: software
+version: 0.1.0
+creators:
+- family-names: Martins
+  given-names: Aline
+  affiliation: Postgraduate Program in Computer Science, Federal University of Ouro Preto, Ouro Preto,
+    MG, Brazil
+- family-names: Rodrigues
+  given-names: Welbert
+- family-names: Henriques
+  given-names: Joao Vitor
+- family-names: Camelo
+  given-names: Lucas
+- family-names: Torres
+  given-names: Gabriel
+- family-names: Luz
+  given-names: Eduardo
+- family-names: da Silva
+  given-names: Ana Paula C.
+- family-names: Ferreira
+  given-names: Carlos H. G.
+creator_confirmation_required: false
+manuscript_authors_source: manuscript/main.tex
+repository_url: https://github.com/chgferreira/energygapbench-icit2027
+doi: null
+reserved_doi: null
+publication_date: null
+code_license: MIT
+data_redistribution_license: not_established
+included_data: synthetic_fixtures_and_derived_compact_focused_results
+raw_telemetry_included: false
+third_party_terms: THIRD_PARTY_NOTICES.md
+focused_run_id: conference-20261101T165101Z-1789282
+focused_operational_execution_complete: true
+original_report_scientific_complete: false
+expanded_full_execution_complete: false
+keywords:
+- time series
+- imputation
+- energy telemetry
+- information availability
+- reproducibility
+description: Research artifact with code, compact focused experiment evidence, result-derived analyses
+  and a revised six-page manuscript. Physical semantics, selection sensitivity, external validity and
+  public data-sharing terms remain unresolved. No archival deposit or DOI has been created.
+creator_source: Author order and Aline Martins affiliation supplied for the manuscript revision
+analysis_versions:
+- original_frozen_report
+- common_target_forecast_v2

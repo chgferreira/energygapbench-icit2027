@@ -1,0 +1,20 @@
+{
+  "arrays": "{site}_block{days}",
+  "base_seed": 20261031,
+  "columns": [
+    {
+      "control": "uniform_shift_no_deadzone",
+      "difference": "archived_linear_E_nmae_minus_control_nmae"
+    },
+    {
+      "control": "uniform_shift_tolerant",
+      "difference": "archived_linear_E_nmae_minus_control_nmae"
+    }
+  ],
+  "rows": "replicate IDs 0..9999; invalid draws retained as NaN without replacement",
+  "same_resample_for_both_controls": true,
+  "shape": [
+    10000,
+    2
+  ]
+}

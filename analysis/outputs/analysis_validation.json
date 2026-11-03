@@ -1,0 +1,96 @@
+{
+  "run_id": "conference-20261101T165101Z-1789282",
+  "scientific_protocol_fingerprint_verified": true,
+  "episode_policy_rows": 2359320,
+  "test_episode_policy_rows": 2194560,
+  "test_episode_instances": 68580,
+  "reconstruction_missing_rows": 0,
+  "all_methods_share_1h_target_support": true,
+  "core_aggregate_reproduction": {
+    "rows": 96,
+    "maximum_absolute_errors": {
+      "nmae": 2.7755575615628914e-17,
+      "mae_kw": 4.440892098500626e-16,
+      "forecast_nmae": null,
+      "forecast_mae_kw": null
+    }
+  },
+  "main_table_reproduction": {
+    "rows": 864,
+    "maximum_absolute_errors": {
+      "nmae": 2.7755575615628914e-17,
+      "mae_kw": 5.551115123125783e-17,
+      "forecast_nmae": 2.7755575615628914e-17,
+      "forecast_mae_kw": 0.0
+    }
+  },
+  "contrast_estimate_reproduction": {
+    "rows": 36,
+    "maximum_absolute_errors": {
+      "estimate": 6.938893903907228e-18
+    }
+  },
+  "paired_support": [
+    {
+      "site": "H1",
+      "hypothesis": "instantaneous",
+      "eligible_episodes": 16170,
+      "unavailable_1h_episodes": 89
+    },
+    {
+      "site": "H2",
+      "hypothesis": "instantaneous",
+      "eligible_episodes": 25720,
+      "unavailable_1h_episodes": 226
+    },
+    {
+      "site": "I1",
+      "hypothesis": "instantaneous",
+      "eligible_episodes": 26690,
+      "unavailable_1h_episodes": 48
+    },
+    {
+      "site": "H1",
+      "hypothesis": "interval_mean_start",
+      "eligible_episodes": 16170,
+      "unavailable_1h_episodes": 89
+    },
+    {
+      "site": "H2",
+      "hypothesis": "interval_mean_start",
+      "eligible_episodes": 25720,
+      "unavailable_1h_episodes": 226
+    },
+    {
+      "site": "I1",
+      "hypothesis": "interval_mean_start",
+      "eligible_episodes": 26690,
+      "unavailable_1h_episodes": 48
+    },
+    {
+      "site": "H1",
+      "hypothesis": "interval_mean_end",
+      "eligible_episodes": 16170,
+      "unavailable_1h_episodes": 89
+    },
+    {
+      "site": "H2",
+      "hypothesis": "interval_mean_end",
+      "eligible_episodes": 25720,
+      "unavailable_1h_episodes": 226
+    },
+    {
+      "site": "I1",
+      "hypothesis": "interval_mean_end",
+      "eligible_episodes": 26690,
+      "unavailable_1h_episodes": 48
+    }
+  ],
+  "frozen_primary_forecast_estimates_available": 0,
+  "limitations": [
+    "Inference CIs are read from the frozen export, not recomputed without the full manifest calendars.",
+    "No ledger, per-record failure reasons, selected correction parameters or individual trajectories are included in the compact input.",
+    "The available-target forecast summary is post hoc and conditional on observed future targets; frozen primary forecast estimates remain unavailable.",
+    "No site pooling, inferential test additions or test-set parameter selection is performed."
+  ]
+}

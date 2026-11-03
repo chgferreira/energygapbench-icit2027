@@ -1,0 +1,53 @@
+name: MOMENT-1-base
+scientific_role: general_foundation
+paper: https://proceedings.mlr.press/v235/goswami24a.html
+doi_url: https://proceedings.mlr.press/v235/goswami24a.html
+year: 2024
+publication_status: see_primary_source
+repo: https://github.com/moment-timeseries-foundation-model/moment
+commit: 38f7310ad594100747ca2a8357e9c7ca7d323e0e
+code_license: MIT
+checkpoint_license: mit
+implementation: official_momentfm_native_reconstruction
+implementation_status: integrated
+validation_status: native_parity_synthetic_and_18_real_queries_official_isolated_environment
+availability_reason: null
+capabilities:
+  tasks:
+  - R
+  - O
+  univariate_D1: true
+  multivariate: true
+  counters_native: false
+  irregular_native: false
+  joint_samples: false
+  marginal_quantiles: false
+context:
+  core: 512
+  validated_tiny: 512
+  maximum: null
+normalization: official RevIN mask*input_mask; all unavailable placeholders zeroed
+  before normalizer; observed-only scale
+local_training: not_applicable
+local_cost_seconds: 2.170128666999517
+external_pretraining: unknown
+pretraining_overlap: unknown
+supports_resume:
+  training: not_applicable
+  inference: query_shards
+checkpoint_granularity: query
+environment: environments/moment.lock.txt
+verified_at: '2026-10-31'
+scientific_benchmark_run: false
+conference_eligible: true
+conference_blocker: null
+checkpoint: AutonLab/MOMENT-1-base
+checkpoint_revision: 5e44b0ea26376a176360f87831124e018f876d96
+checkpoint_sha256: 1a436826ffe618273ec62b9656dc4cab8edc470364f104e90542a4ebc14fb825
+partial_patch_policy: upstream masks the entire patch when any position is hidden;
+  admitted neighbors inside partial patch are not tokens
+query_p50_seconds: 0.027214124998863554
+peak_process_rss_bytes: 1165721600
+wrapper_source: src/energygap/methods/moment_subprocess.py
+dependency_override: false
+real_pilot_audit: artifacts/reports/moment_real_isolated_audit.json

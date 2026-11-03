@@ -1,0 +1,18 @@
+# Install into the already active cuda_env. Preserve its compatible CUDA Torch.
+# This file requests only runtime dependencies; pip resolves their declared dependencies.
+-c constraints-server.txt
+numpy
+pandas
+scipy
+PyYAML
+tqdm
+matplotlib
+pyarrow
+torch>=2.5.1,<2.10
+pypots
+transformers
+huggingface-hub
+einops
+threadpoolctl
+tsicl
+momentfm @ https://github.com/moment-timeseries-foundation-model/moment/archive/38f7310ad594100747ca2a8357e9c7ca7d323e0e.zip#sha256=987428c10b201f7af9598be8924c308d72c701bf6167175d0f8fb7a0f4271725

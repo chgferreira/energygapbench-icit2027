@@ -1,0 +1,29 @@
+{
+  "analysis_revision": "energy-control-paired-contrasts-v1",
+  "bootstrap_implementation_sha256": "6f8078195763c09437477ab58dbed3c613cfe9ef87ef2de7864684db69456514",
+  "input_sha256": {
+    "calendar_provenance.json": "8d39358240445e5a22857d5e46f22506ea570dc596c53fd62fa640d67a5f15a4",
+    "controls/control_paired_losses.parquet": "c6daa27afd296eaa7bc158b4ecec5e07adb97c3f3173f4b741321ed13c94e200",
+    "controls/control_protocol.json": "8712d9791b666ae067fc8bfff9c32c224b093ee5828bb06354493cea4d1ac429",
+    "controls/control_validation.json": "6d82a211e6aaab62ee5427294b4fb12b859fc020b55df01550d93ef5415e1e0d",
+    "controls/selected_parameters.csv": "5448d9a38d2ba54a509fabd9bd8a9b23bb3ce2f03b4cbe0d0a2c5b98f3694a3b",
+    "controls/validation_trials.csv": "0b62835f6c472c01d7c5b0f02db074a5e9dd7dcc445e7df2d7ace36c5c482cab",
+    "protocol.lock.json": "3939cd8f9c82558673fa86e59970c11c7d1c41c75c488381dd9602d547619cb0",
+    "protocol.lock.sha256": "a0f13987045631c14c21aa522f7ed3b0f8bbc1cc5d7ed900acf734252b6b9608",
+    "reports/episode_losses.parquet": "fa698c373d336f485c722dcbe63cf2464d7062fbc3ec3ea51549c2a742d67894"
+  },
+  "numpy_version": "2.5.4",
+  "output_sha256": {
+    "control_bootstrap_draws.npz": "12f14583ab5c4728cb21835a61151a1e3056aa8045baaac0f2b1c4a4808b04c4",
+    "control_contrast_cells.csv": "38bd07423ef1c00c76bb860afb0214448ce4753641228c4c55e36816dddfc3f8",
+    "control_contrast_site_scores.csv": "bb429e6faf0ff67587d3144bea71e375bea2a31bc915443727cbac13b179f793",
+    "control_contrasts.csv": "28484d3b33dbdd216c282ae593f3d0292934bb895569ff4732fa5bce29d81433",
+    "control_contrasts.json": "5dac588eafcab7068e4cdd058d2cefd3fa9dff7515809c289209af3a8a64e990",
+    "control_contrasts.tex": "be904b37cc7baf36ca4cce2d61f454a1123ebb3d0b18634dfb3c3d09cfe2382a",
+    "control_draws_schema.json": "3f9da59950838adae04c08997190a241595b72471070e8e4db781e5408751596",
+    "control_statistics_summary.json": "92886b6bfaf7714bd02134ac89c423d9fc9d9072d12413e3c8633e1671686bfb"
+  },
+  "pandas_version": "3.1.0",
+  "python_version": "3.12.14",
+  "script_sha256": "5fb41a0e7f5e05dbee6ec8330bf70aca27c5b77241df17fcb5110aa10bdd4edc"
+}

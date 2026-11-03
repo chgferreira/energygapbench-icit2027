@@ -1,0 +1,25 @@
+name: minimal-scientific-tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      MPLBACKEND: Agg
+      MPL_IGNORE_SYSTEM_FONTS: '1'
+      PYTHONPATH: src
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv venv --python 3.12 .venv
+      - run: uv pip sync --python .venv/bin/python requirements.lock.txt
+      - run: .venv/bin/python -m pytest -q
+      - name: Versioned forecast analysis checks
+        run: .venv/bin/python -m unittest discover -s analysis/forecast_v2/tests -v
+      - name: Supplemental energy-control checks
+        run: .venv/bin/python -m pytest -q analysis/tests
+      - name: Public artifact scope and integrity
+        run: .venv/bin/python scripts/check_public_release.py
+      - name: Public aggregate reproduction
+        run: ANALYSIS_PYTHON=.venv/bin/python bash scripts/reproduce_icit.sh
+      - run: .venv/bin/energygap reproduce --profile smoke --progress log --budget-total-hours 0.1
+      - run: .venv/bin/energygap recovery-demo --output runs/ci-recovery

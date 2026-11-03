@@ -1,0 +1,50 @@
+name: TS-ICL
+scientific_role: recent_foundation
+paper: https://arxiv.org/abs/2606.05878
+doi_url: https://arxiv.org/abs/2606.05878
+year: 2026
+publication_status: preprint
+repo: https://github.com/EDF-Lab/ts-icl
+commit: 61d1e891a4aeab4b8aa4833c57480025c225b357
+code_license: TS-ICL Non-Commercial License v1.0
+checkpoint_license: same_noncommercial_terms
+implementation: native_impute_isolated_noncommercial_worker
+implementation_status: integrated
+validation_status: native_parity_availability_and_hidden_poisoning_validated
+availability_reason: null
+capabilities:
+  tasks:
+  - R
+  - O
+  univariate_D1: true
+  multivariate: true
+  counters_native: false
+  irregular_native: false
+  joint_samples: false
+  marginal_quantiles: true
+context:
+  core: 512
+  validated_tiny: 512
+  maximum: null
+normalization: native masked context observed only
+local_training: not_applicable
+local_cost_seconds: null
+external_pretraining: unknown
+pretraining_overlap: unknown
+supports_resume:
+  training: not_applicable
+  inference: validated_query_shards
+checkpoint_granularity: query
+environment: environments/tsicl.lock.txt
+verified_at: '2026-10-31'
+scientific_benchmark_run: false
+conference_eligible: false
+conference_blocker: separate noncommercial worker not integrated into full conference
+  orchestration; contextual cost and all matrix requirements remain pending
+wrapper_source: scripts/tsicl_worker.py
+checkpoint: taharnbl/TS-ICL:tsicl-v1.ckpt
+checkpoint_revision: 19c94031439fb31f36ce395088ee50a6762d3774
+checkpoint_sha256: a67ae9f694c2a83cfc8e7ec41745ff4f41a4a76ee2b17172ec3430d8d29da431
+primary_point: native median 0.5
+inspected_head_commit: 349f3eae4f01f78536b16a6ea53c0837760166ec
+package_version: 0.2.1

@@ -1,0 +1,37 @@
+{
+  "all_policies_share_target_support": true,
+  "analysis_revision": "forecast-common-target-v2",
+  "bootstrap_attempts_per_contrast": 10000,
+  "bootstrap_seed": 20261031,
+  "chronology": "Available-target reporting revision after inspection of the completed frozen execution; not preregistered or confirmatory.",
+  "common_target_episode_instances": 68217,
+  "conditioning": [
+    "Observed future targets",
+    "Fitted reconstruction and forecast models",
+    "Realized artificial masks",
+    "Validation-selected baseline and correction policy"
+  ],
+  "confirmatory": false,
+  "eligible_episode_instances": 68580,
+  "estimand": "Mean of per-episode seed-averaged forecast losses on common originally observed one-hour targets; equal weights for each of the three durations and each of the three folds; installations analyzed separately.",
+  "evaluated_policies": 32,
+  "excluded_target_episode_instances": 363,
+  "limitations": [
+    "No correction for target-missingness selection bias or full training/model-selection uncertainty.",
+    "H1 fails the declared temporal-support heuristic for the main seven-day analysis.",
+    "Meter semantics remain hypothetical; interval-mean I1 identity is not a metrological validation.",
+    "This revision does not reclassify original unavailable forecast endpoints as originally completed.",
+    "Derived calendar provenance is reconstructed from hash-verified source timestamps, not original server split manifests; exact reconstruction interval replay checks the reconstruction."
+  ],
+  "main_block_days": 7,
+  "maximum_replayed_ci_absolute_error": 6.938893903907228e-18,
+  "multiplicity": "54 exploratory contrast/measurement-assumption/block-length summaries; pointwise intervals and unadjusted exploratory p-values; no familywise or FDR control claim.",
+  "original_frozen_report_modified": false,
+  "reconstruction_interval_replays": 54,
+  "required_fold_duration_strata_per_site": 9,
+  "run_id": "conference-20261101T165101Z-1789282",
+  "sensitivity_block_days": [
+    2,
+    14
+  ]
+}

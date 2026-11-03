@@ -1,0 +1,42 @@
+name: MoTM
+scientific_role: recent_foundation
+paper: https://arxiv.org/abs/2511.05980
+doi_url: https://arxiv.org/abs/2511.05980
+year: 2026
+publication_status: see_primary_source
+repo: https://github.com/taharnbl/tsfm_imputation
+commit: 10a05562eac73524d119883668fe4ebd3c3e9bf0
+code_license: null
+checkpoint_license: null
+implementation: R24_source_audited_not_integrated
+implementation_status: unavailable
+validation_status: not_validated
+availability_reason: R24 expects model directories with ckpt/weights.pt and .hydra/config.yaml
+  for INR mixture; those artifacts absent locally, no verified weight license.
+capabilities:
+  tasks:
+  - R
+  - O
+  univariate_D1: not_audited
+  multivariate: true
+  counters_native: false
+  irregular_native: false
+  joint_samples: false
+  marginal_quantiles: false
+context:
+  core: 512
+  validated_tiny: null
+  maximum: null
+normalization: requires_upstream_audit
+local_training: not_applicable
+local_cost_seconds: null
+external_pretraining: unknown
+pretraining_overlap: unknown
+supports_resume: false
+checkpoint_granularity: not_validated
+environment: separate_optional_environment
+verified_at: '2026-10-31'
+scientific_benchmark_run: false
+conference_eligible: false
+conference_blocker: R24 expects model directories with ckpt/weights.pt and .hydra/config.yaml
+  for INR mixture; those artifacts absent locally, no verified weight license.

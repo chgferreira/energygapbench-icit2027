@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "energygapbench"
+version = "0.1.0"
+description = "Availability-aware electric telemetry gap reconstruction research infrastructure"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+license = "MIT"
+dependencies = ["numpy>=2.0", "pandas>=2.2", "scipy>=1.14", "PyYAML>=6", "tqdm>=4.67", "matplotlib>=3.9", "pyarrow>=18"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+neural = ["pypots>=1.0", "torch>=2.5"]
+
+[project.scripts]
+energygap = "energygap.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/energygap"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = ["heavy: optional upstream model integration", "recovery: subprocess recovery tests"]
