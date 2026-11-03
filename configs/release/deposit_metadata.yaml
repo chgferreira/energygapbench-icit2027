@@ -1,13 +1,13 @@
 schema_version: 1
-status: local_publication_candidate_not_deposited
-title: 'EnergyGapBench: Energy-Informed Recovery of Power Telemetry After Communication Gaps'
+status: public_repository_no_archival_deposit
+title: 'EnergyGapBench: Energy-Regularized Imputation of Power Telemetry after Communication Outages'
 resource_type: software
 version: 0.1.0
 creators:
 - family-names: Martins
   given-names: Aline
   affiliation: Postgraduate Program in Computer Science, Federal University of Ouro Preto, Ouro Preto,
-    MG, Brazil
+    Minas Gerais, Brazil
 - family-names: Rodrigues
   given-names: Welbert
 - family-names: Henriques
@@ -23,14 +23,17 @@ creators:
 - family-names: Ferreira
   given-names: Carlos H. G.
 creator_confirmation_required: false
-manuscript_authors_source: manuscript/main.tex
+manuscript_authors_source: CITATION.cff
+manuscript_status: under_review_at_IEEE_ICIT_2027
 repository_url: https://github.com/chgferreira/energygapbench-icit2027
 doi: null
 reserved_doi: null
 publication_date: null
 code_license: MIT
 data_redistribution_license: not_established
-included_data: synthetic_fixtures_and_derived_compact_focused_results
+included_data: synthetic_fixtures_and_aggregate_results
+data_availability: available_upon_reasonable_request
+manuscript_included: false
 raw_telemetry_included: false
 third_party_terms: THIRD_PARTY_NOTICES.md
 focused_run_id: conference-20261101T165101Z-1789282
@@ -43,9 +46,10 @@ keywords:
 - energy telemetry
 - information availability
 - reproducibility
-description: Research artifact with code, compact focused experiment evidence, result-derived analyses
-  and a revised six-page manuscript. Physical semantics, selection sensitivity, external validity and
-  public data-sharing terms remain unresolved. No archival deposit or DOI has been created.
+description: Research software, aggregate results and versioned analyses for a manuscript
+  under review at IEEE ICIT 2027. Study data are available from the authors upon reasonable
+  request. The manuscript and individual records are maintained separately. No archival
+  deposit or DOI has been created.
 creator_source: Author order and Aline Martins affiliation supplied for the manuscript revision
 analysis_versions:
 - original_frozen_report

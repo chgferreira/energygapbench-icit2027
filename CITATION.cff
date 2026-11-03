@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "Please cite this software and the separately distributed study manuscript when using these analyses."
-title: "EnergyGapBench: Energy-Informed Recovery of Power Telemetry After Communication Gaps"
+title: "EnergyGapBench: Energy-Regularized Imputation of Power Telemetry after Communication Outages"
 type: software
 version: "0.1.0"
 repository-code: "https://github.com/chgferreira/energygapbench-icit2027"
@@ -26,7 +26,7 @@ license: MIT
 abstract: "Research software and versioned analyses for a manuscript under review at IEEE ICIT 2027, reporting a focused three-site study of power telemetry recovery, including the common-observed-target forecast analysis version 2. Original code is MIT; telemetry, derived data, manuscript content and third-party artifacts retain separate terms."
 preferred-citation:
   type: unpublished
-  title: "Energy-Informed Recovery of Power Telemetry After Communication Gaps"
+  title: "Energy-Regularized Imputation of Power Telemetry after Communication Outages"
   authors:
     - family-names: "Martins"
       given-names: "Aline"

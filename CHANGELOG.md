@@ -2,6 +2,8 @@
 
 ## 2026-11-03
 
+- Updated the manuscript title to **Energy-Regularized Imputation of Power Telemetry after Communication Outages** across the overview, citation and deposit metadata.
+
 - Documented the manuscript status as under review at IEEE ICIT 2027 and the
   availability of study data from the authors upon reasonable request.
 - Aligned the overview, dataset card, access policy, research roadmap and citation

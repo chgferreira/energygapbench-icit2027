@@ -1,7 +1,7 @@
 # EnergyGapBench for IEEE ICIT 2027
 
-Research code, aggregate results and reproducible analysis for **Energy-Informed
-Recovery of Power Telemetry After Communication Gaps**.
+Research code, aggregate results and reproducible analysis for
+**Energy-Regularized Imputation of Power Telemetry after Communication Outages**.
 
 **Manuscript status: under review at IEEE ICIT 2027.**
 
@@ -204,8 +204,8 @@ are not a general identity bypass.
 
 ## Citation, data access and licensing
 
-The associated manuscript, **Energy-Informed Recovery of Power Telemetry After
-Communication Gaps**, is **under review at IEEE ICIT 2027**. Author order and
+The associated manuscript, **Energy-Regularized Imputation of Power Telemetry after Communication Outages**,
+is **under review at IEEE ICIT 2027**. Author order and
 citation metadata are provided in [`CITATION.cff`](CITATION.cff). Cite the software
 version or commit used in a reproduction, and distinguish the original experiment
 from its versioned follow-up analyses.
