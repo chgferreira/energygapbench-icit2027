@@ -1,0 +1,148 @@
+schema_version: 1
+site_id: H2
+files:
+- path: raw_data/H2.csv
+  sha256: 10a1a5738369a56a7f302eb216fb342558a98e21b8f182356e877194e9e05218
+  encoding: utf-8-sig
+  delimiter: ;
+  decimal: ','
+  thousands: .
+  evidence: BOM/header and complete successful delimiter/locale parse
+  site_mapping_evidence: directory/site-ID filename; explicit map persisted in config
+timestamp:
+  column: atualizadoEm
+  timezone: America/Sao_Paulo
+  date_format: ISO 8601 YYYY-MM-DD HH:MM:SS
+  date_ambiguity: none in file lexical format
+  semantics: null
+  availability_column: null
+  availability_assumption: 'optimistic: measurement_time after temporal contract confirmation'
+  hypothetical_semantics: interval_start
+power:
+  column: potenciaAtivaTotal
+  unit: W
+  semantics: null
+  import_sign: negative
+  canonical_unit: kW
+  canonical_import_sign: positive
+  contextual_hypothesis:
+    unit: W
+    import_sign: negative
+    source: user-provided prior-manuscript description; requires instrument/config
+      confirmation
+  hypothetical_semantics: interval_mean
+counters:
+  import:
+    column: energia ativa consumida da rede (kwh)
+    unit: kWh
+    resolution: null
+    update_period_seconds: null
+    rollover: null
+    evidence: column label only; metrology/update not confirmed
+  export:
+    column: energia ativa injetada na rede (kwh)
+    unit: kWh
+    resolution: null
+    update_period_seconds: null
+    rollover: null
+    evidence: column label only; metrology/update not confirmed
+auxiliaries:
+  corrente fase a (a):
+    column: corrente fase a (a)
+    unit: a
+    evidence: column label
+  corrente fase b (a):
+    column: corrente fase b (a)
+    unit: a
+    evidence: column label
+  corrente fase c (a):
+    column: corrente fase c (a)
+    unit: a
+    evidence: column label
+  energia aparente consumida da rede (vah):
+    column: energia aparente consumida da rede (vah)
+    unit: vah
+    evidence: column label
+  energia aparente injetada na rede (vah):
+    column: energia aparente injetada na rede (vah)
+    unit: vah
+    evidence: column label
+  energia reativa consumida da rede (varh):
+    column: energia reativa consumida da rede (varh)
+    unit: varh
+    evidence: column label
+  energia reativa injetada na rede (varh):
+    column: energia reativa injetada na rede (varh)
+    unit: varh
+    evidence: column label
+  fator de potência fase a:
+    column: fator de potência fase a
+    unit: null
+    evidence: column label
+  fator de potência fase b:
+    column: fator de potência fase b
+    unit: null
+    evidence: column label
+  fator de potência fase c:
+    column: fator de potência fase c
+    unit: null
+    evidence: column label
+  tensão fase an (v):
+    column: tensão fase an (v)
+    unit: v
+    evidence: column label
+  tensão fase bn (v):
+    column: tensão fase bn (v)
+    unit: v
+    evidence: column label
+  tensão fase cn (v):
+    column: tensão fase cn (v)
+    unit: v
+    evidence: column label
+  tensão linha ab (v):
+    column: tensão linha ab (v)
+    unit: v
+    evidence: column label
+  tensão linha bc (v):
+    column: tensão linha bc (v)
+    unit: v
+    evidence: column label
+  tensão linha ca (v):
+    column: tensão linha ca (v)
+    unit: v
+    evidence: column label
+alignment:
+  nominal_seconds: 300
+  tolerance_seconds: 90
+  status: proposed; modal interval audited
+  duplicate_policy: identical target/arrival retain deterministic first and provenance;
+    conflicts unavailable
+  conflict_policy: flag; no value selected for evaluation
+evidence:
+  file_mapping: actual path discovered recursively; originals untouched
+  encoding: UTF-8 BOM
+  locale: semicolon delimiters, comma decimals, dot thousands confirmed by full parse
+  power_metadata: 'User confirmation 2026-10-31: W and negative import supported by
+    internal integration-versus-counter audit only; no manufacturer specification.
+    Instantaneous/interval-mean semantics remain unknown.'
+  timestamp_metadata: naive timestamps; timezone and updated-at-vs-measured-at unresolved
+  timestamp_timezone: 'User confirmation 2026-10-31: America/Sao_Paulo, UTC-03 over
+    supplied periods. Updated-at versus measured-at and interval start/end remain
+    unknown.'
+  hypothetical_semantics: User-authorized sensitivity hypotheses; not instrument metadata.
+    Physical validate() deliberately remains blocked.
+confirmed:
+  timestamp.column: true
+  timestamp.timezone: true
+  timestamp.semantics: false
+  power.column: true
+  power.unit: true
+  power.semantics: false
+  power.import_sign: true
+unconfirmed:
+- timestamp.semantics
+- power.semantics
+- counter resolution/update/lag/reset semantics
+experiment_status: exploratory_hypothesis_only; does_not_confirm_device_semantics
+hypothetical_exploratory: true
+hypothesis_id: interval_mean_start

@@ -9,7 +9,7 @@ __pycache__/
 # Private inputs, mutable execution state and model artifacts
 raw_data/**
 !raw_data/.gitkeep
-datasets/
+/datasets/
 data/interim/**
 data/processed/**
 data/evaluation_truth/**

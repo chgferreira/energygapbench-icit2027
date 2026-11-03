@@ -13,6 +13,8 @@
 - Declared `threadpoolctl` as a base runtime dependency for parallel report
   workers. Regenerated the minimal dependency export without changing previously
   pinned versions and added an early dependency check to continuous integration.
+- Corrected the root dataset exclusion so that `configs/datasets/` contracts
+  are included in clean checkouts while raw dataset directories remain excluded.
 - Retained the original experiment implementation, protocol identity and all
   numerical results. Documentation and packaging updates do not revise the
   scientific estimands or the recorded run configuration.
